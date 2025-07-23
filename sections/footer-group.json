@@ -1,0 +1,35 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer Group",
+  "sections": {
+    "cru_footer_1_ARNP3f": {
+      "type": "cru-footer-1",
+      "name": "CRU Footer",
+      "settings": {
+        "bg_color": "#231f20",
+        "show_col_1": true,
+        "col1_content": "<div class=\"footer-inner\">\n<p class=\"footer_heading\">Cuvees</p>\n\n<ul>\n \t<li><a href=\"/clarendon-hills-astralis/\">Astralis</a></li>\n \t<li><a href=\"/clarendon-hills-romas/\">Romas</a></li>\n \t<li><a href=\"/clarendon-hills-sandown-vineyard/\">Sandown</a></li>\n \t<li><a href=\"/clarendon-hills-onkaparinga-vineyard/\">Onkaparinga</a></li>\n \t<li><a href=\"/domaine-clarendon/\">Domaine Clarendon</a></li>\n</ul>\n<div class=\"footer_social_media_icons\"><p><a href=\"https://www.instagram.com/clarendonhills/\"><i class=\"fa-brands fa-instagram\"></i></a></p></div>\n</div>",
+        "show_col_2": false,
+        "col2_content": "",
+        "show_col_3": false,
+        "col3_content": "",
+        "show_col_4": false,
+        "col4_content": "",
+        "enable_copyright": true,
+        "copyright_content": "<ul class=\"footer_bottom\">\n \t<li><a href=\"/terms-conditions/\">Terms & Conditions</a></li>\n \t<li><a href=\"/contact-us/\">Contact Us</a></li>\n \t<li>\n<p class=\"arr\">© 2022 Clarendon Hills. All rights reserved</p>\n</li>\n \t<li>\n<p class=\"made_by\">eCommerce by <a href=\"https://cru.io/\">CRU</a></p>\n</li>\n</ul>"
+      }
+    }
+  },
+  "order": [
+    "cru_footer_1_ARNP3f"
+  ]
+}

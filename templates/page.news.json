@@ -1,0 +1,55 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "cru_stack_7RRm4r": {
+      "type": "cru-stack",
+      "blocks": {
+        "text_GkyNK3": {
+          "type": "text",
+          "settings": {
+            "text": "News",
+            "id": "",
+            "class": "page_title"
+          }
+        },
+        "custom_DRqPFr": {
+          "type": "custom",
+          "settings": {
+            "subheading": "Read Clarendon Hills news posts about topics ranging from new releases to the latest scores and more. We'll keep adding information here including how museum wines are tasting, what new wines we're adding to our website and other information to assist you in understanding more about Clarendon Hills",
+            "section_id": "",
+            "section_class": "",
+            "has_button": true,
+            "button_text": "Mailing list signup",
+            "button_link": "/"
+          }
+        }
+      },
+      "block_order": [
+        "text_GkyNK3",
+        "custom_DRqPFr"
+      ],
+      "name": "CRU Stack",
+      "settings": {
+        "id": "",
+        "class": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cru_stack_7RRm4r"
+  ]
+}

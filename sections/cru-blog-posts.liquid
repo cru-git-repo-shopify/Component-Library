@@ -1,0 +1,39 @@
+<div id="{{ section.settings.section_id }}" class="all_posts {{ section.settings.section_class }}";>
+    {% for article in blogs['news'].articles %}
+        <article class="post-article">
+            <div class="article_feat_image" style="background-image: url('{{ article.image | image_url }}" alt="{{ article.title }}');"></div>
+                <div class="article_content">
+                    <h2 class="article_title">{{ article.title }}</h2>
+                    <p class="shor_desc">{{ article.excerpt | strip_html }}</p>
+                    <a class="article_link" href="{{ article.url }}">Read more</a>
+                </div>
+        </article>
+    {% endfor %}
+</div>
+
+{% schema %}
+{
+    "name": "CRU Contact Section",
+    "class": "cru_contact_section",
+    "tag": "div",
+    "settings": [
+        {
+            "type": "text",
+            "id": "section_id",
+            "label": "ID"
+        },
+        {
+            "type": "text",
+            "id": "section_class",
+            "label": "Class"
+        }
+    ],
+    "blocks": [],
+    "presets": [
+        {
+            "name": "CRU Posts",
+            "category": "CRU"
+        }
+    ]
+}
+{% endschema %}

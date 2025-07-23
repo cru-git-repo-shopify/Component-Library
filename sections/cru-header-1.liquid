@@ -1,0 +1,97 @@
+<div class="header-container logo_centered_left_hamb">
+		<div class="header_left_area">
+			<a class="left_hamburger" href="#"><i class="fa-solid fa-bars"></i></a>
+		</div>
+		<div class="logo">
+			<a href="{{ routes.root_url }}">
+				<img
+                src="{{ section.settings.logo | image_url: width: 300 }}"
+                alt="{{ section.settings.logo.alt | escape }}"
+                loading="lazy"
+                width="{{ section.settings.logo.width }}"
+                height="{{ section.settings.logo.height }}"
+                >
+			</a>
+		</div>
+		<div class="header_right_area">
+			{% if section.settings.show_login_icon %}
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+            {% endif %}
+            {% if section.settings.show_cart_icon %}
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            {% endif %}
+		</div>
+	</div>
+	<div class="left-popup-menu">
+		<div class="left-popup-menu-inner">
+			<a href="#" class="hamburger_close"><i class="fa-solid fa-xmark"></i></a>
+			<div class="menu-main-menu-container">
+                <ul id="menu-main-menu" class="menu">
+                    {% if section.settings.menu %}
+                        {% for link in section.settings.menu.links %}
+                            <li class="menu-item menu-item-type-post_type header-menu__item">
+                                <a href="{{ link.url }}" class="header-menu__link">
+                                {{ link.title }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    {% endif %}
+                </ul>
+            </div>
+			<div class="content-bottom-container">
+				{% comment %} <?php if(trim(get_field('header_footer_text', 'option'))){ ?>
+					<div class="header_footer_text"><?php echo get_field('header_footer_text', 'option'); ?></div>
+				<?php } ?> {% endcomment %}
+
+                <div class="social_media_icons">
+                    {% if section.settings.social_ig %}
+                        <a class="social_url" target="_blank" href="{{ section.settings.ig_link }}"><i class="fa-brands fa-instagram"></i></a>                   
+                    {% endif %}
+                </div>
+			</div>
+		</div>
+	</div>
+{% schema %}
+{
+    "name":"CRU Header Centered Logo",
+    "class":"cru_header_logo_centered",
+    "tag": "div",
+    "settings":[
+        {
+            "type": "link_list",
+            "id": "menu",
+            "label": "Menu"
+        },
+        {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "Logo"
+        },
+        {
+            "type": "checkbox",
+            "id": "show_login_icon",
+            "label": "Show user icon",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "show_cart_icon",
+            "label": "Show cart icon",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "social_ig",
+            "label": "Show Instagram"
+        },
+        {
+            "type": "text",
+            "id": "ig_link",
+            "label": "Instagram Link"
+        }
+    ],
+    "presets":[{"name": "CRU Header Centered Logo", "category": "CRU"}],
+    "blocks": []
+
+}
+{% endschema %}

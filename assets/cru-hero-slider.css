@@ -1,0 +1,127 @@
+.hero_content {
+    height: 100vh!important;
+    background-size: cover;
+    background-position: center;
+    position: relative
+}
+
+.hero_txt_content {
+    position: absolute;
+    bottom: 25%;
+    left: 5%;
+    text-align: left;
+    width: fit-content;
+    max-width: 650px;
+    z-index: 9999
+}
+
+.hero_heading {
+    font-size: 49px;
+    text-align: left;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 24px;
+    line-height: 80px;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    font-family: Inter-thin
+}
+
+.hero_heading:after {
+    content: '';
+    width: 95px;
+    display: block;
+    height: 1px;
+    background-color: #fff;
+    margin-top: 24px
+}
+
+p.hero_sub_heading {
+    font-size: 15px;
+    color: #fff;
+    line-height: 23px;
+    margin-bottom: 30px;
+    max-width: 450px;
+    font-weight: 400
+}
+
+.wht_btn,.white_btn a.gb-button {
+    font-size: 15px;
+    font-family: Lora serif;
+    border: 2px solid #fff;
+    font-weight: 400;
+    display: inline-block;
+    text-decoration: none!important;
+    color: #fff;
+    padding: 10px;
+    background-color: transparent!important;
+    max-width: 230px;
+    width: 230px;
+    text-align: center
+}
+
+a.hero_slider_next {
+    position: absolute;
+    bottom: calc(11% - 2px);
+    right: calc(6% - 4px);
+    color: #767676;
+    font-size: 40px;
+    text-decoration: none!Important;
+    display: inline-block;
+    vertical-align: middle;
+    z-index: 999;
+    font-family: Inter-light
+}
+
+a.hero_slider_next:before {
+    content: "";
+    background: url(/wp-content/themes/cru-theme/assets/img/arrow-right.png);
+    height: 28px;
+    width: 42px;
+    display: inline-block;
+    margin-right: 29px;
+    vertical-align: middle;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 10px
+}
+
+ul.slick-dots {
+    bottom: 20px!important
+}
+
+a.hero_slider_prev {
+    position: absolute;
+    bottom: calc(11% - 2px);
+    left: calc(5%);
+    color: #767676;
+    font-size: 40px;
+    text-decoration: none!Important;
+    display: inline-block;
+    vertical-align: middle;
+    z-index: 999;
+    font-family: Inter-light
+}
+
+a.hero_slider_prev:before {
+    content: "";
+    background: url(/wp-content/themes/cru-theme/assets/img/arrow-right.png);
+    height: 28px;
+    width: 42px;
+    display: inline-block;
+    margin-right: 29px;
+    vertical-align: middle;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    transform: rotate(180deg);
+}
+
+.hero_main_container .slick-arrow {
+    display: none!important;
+}
+
+.hero_main_container.slick-initialized.slick-slider.slick-dotted {
+    margin-bottom: 0;
+}

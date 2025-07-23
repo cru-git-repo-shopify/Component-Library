@@ -1,0 +1,65 @@
+div#contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin-left: auto;
+    display: grid !important;
+    grid-template-columns: 47% 53%;
+    margin-top: 75px;
+}
+
+.form_column {
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+.contact-form input:not([type="submit"]), .contact-form textarea {
+    background-color: transparent;
+    box-shadow: none;
+    border: 1px solid #eee;
+    padding: 15px 20px;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.contact-form textarea#message {
+    height: 288px;
+}
+
+.cru-contact-col input[type=submit] {
+    margin: 0;
+}
+
+.cru-contact-section h2.section-header {
+    margin-bottom: 50px;
+}
+
+.cru-contact-section p.content-txt {
+    margin-bottom: 60px;
+}
+
+.stack.page_header_container {
+    padding-bottom: 90px;
+    margin-bottom: 0;
+    padding-top: 242px;
+    background-color: #f6f6f6;
+}
+
+.block-text.page_title p {
+    margin-left: 5%;
+    font-size: 40px;
+    color: #231f20;
+    font-family: inter-light;
+    font-weight: 100;
+    line-height: 1;
+}
+
+.block-text.page_title p:after {
+    content: '';
+    width: 95px;
+    display: block;
+    height: 1px;
+    background-color: #000;
+    margin: 24px 0 0;
+}
