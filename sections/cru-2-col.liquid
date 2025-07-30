@@ -1,0 +1,111 @@
+{%  if section.settings.is_reversed %}
+    <div class="cru-2-col col-reversed {{ section.settings.class }}" id="{{ section.settings.id }}">
+{% else %}
+    <div class="cru-2-col {{ section.settings.class }}" id="{{ section.settings.id }}">
+{% endif %}
+    {% for block in section.blocks %}
+      {% if block.type == 'text_column' %}
+        <div class="text-column">
+            <div class="text-col-inner">
+                <h2>{{ block.settings.heading }}</h2>
+                <p>{{ block.settings.column_content }}</p>
+                {% if block.settings.show_button %}
+                    <a href="{{ block.settings.button_link }}" class="btn">{{ block.settings.button_text }}</a>
+                {% endif %}
+            </div>
+        </div>
+      {% else %}
+        <div class="image-column">
+          <img src="{{ block.settings.image | img_url: 'large' }}" alt="{{ block.settings.image_alt }}">
+        </div>
+      {% endif %}
+  {% endfor %}
+</div>
+{% schema  %}
+    {
+  "name": "CRU 2 Column",
+  "settings": [
+    {
+      "type": "header",
+      "content": "CRU 2 Column Settings"
+    },
+    {   
+      "type": "text",
+      "id": "class",
+      "label": "Section Class"
+    },
+    {
+      "type": "text",
+      "id": "id",
+      "label": "Section ID"
+    },
+    {
+        "type": "checkbox",
+        "id": "is_reversed",
+        "label": "Reverse Columns",
+        "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text_column",
+      "name": "Text Column",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Heading"
+        },
+        {
+          "type": "textarea",
+          "id": "column_content",
+          "label": "Column Content",
+          "default": "Column Content"
+        },
+        {
+            "type": "checkbox",
+            "id": "show_button",
+            "label": "Show Button",
+            "default": true
+        },
+        {
+            "type": "text",
+            "id": "button_link",
+            "label": "Button Link",
+            "default": "https://example.com"
+        },
+        {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text",
+            "default": "Learn More"
+        }
+      ]
+    },
+    {
+      "type": "image_column",
+      "name": "Image Column",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "image_alt",
+          "label": "Image Alt Text",
+          "default": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "CRU 2 Column",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

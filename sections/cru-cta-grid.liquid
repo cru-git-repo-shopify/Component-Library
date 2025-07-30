@@ -1,0 +1,66 @@
+<div class="cru-cta-grid">
+  {% for block in section.blocks %}
+    <div class="cta-block">
+      <img src="{{ block.settings.background_image | img_url: 'large' }}" alt="{{ block.settings.title }}" class="cta-background" />
+        <div class="cta-overlay">
+            <h2>{{ block.settings.title }}</h2>
+            <p>{{ block.settings.description }}</p>
+            <a href="{{ block.settings.button_link }}" class="btn">{{ block.settings.button_text }}</a>
+        </div>
+    </div>
+  {% endfor %}
+</div>
+{% schema  %}  
+{
+  "name": "CRU CTA Grid",
+  "settings": [
+    {
+      "type": "header",
+      "content": "CRU CTA Grid Settings"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cta_block",
+      "name": "CTA Block",
+      "settings": [
+        {
+            "type": "image_picker",
+            "id": "background_image",
+            "label": "Background Image"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Section Title",
+            "default": "Call to Action"
+        },
+        {
+            "type": "textarea",
+            "id": "description",
+            "label": "Description",
+            "default": "This is a call to action section."
+        },
+        {
+            "type": "text",
+            "id": "button_link",
+            "label": "Button Link",
+            "default": "https://example.com"
+        },
+        {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text",
+            "default": "Learn More"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "CRU CTA Grid",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

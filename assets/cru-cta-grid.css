@@ -1,0 +1,33 @@
+.cru-cta-grid {
+    display: flex;
+    gap: 50px;
+    /* max-width: 90%; */
+    margin: 0 auto;
+    padding: 75px 5%;
+}
+
+.cta-block {
+    width: calc(33.33%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+img.cta-background {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.cta-overlay h2 {
+    margin-top: 0;
+}
+
+.cta-overlay {
+    padding: 25px;
+    background-color: #000;
+}
+
+.cta-overlay * {
+    color: #fff;
+}

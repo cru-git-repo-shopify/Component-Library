@@ -1,0 +1,29 @@
+.cru-2-col {
+    display: flex;
+    align-items: center;
+}
+
+.text-column, .image-column {
+    width: 50%;
+    position: relative;
+}
+
+.image-column img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.text-column {
+    padding: 50px;
+    padding-left: 5%;
+}
+
+.col-reversed {
+    flex-direction: row-reverse;
+}
+
+.col-reversed .text-column {
+    padding: 50px 5% 50px 50px;
+}
