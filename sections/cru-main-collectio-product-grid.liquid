@@ -1,19 +1,27 @@
-{% assign all_tags = collections['all-products'].all_tags %}
+{% assign all_tags = collections.all.all_tags %}
 
-<div class="tag-filter">
-  <label for="tag-select">Filter by Tag:</label>
-  <select id="tag-select">
-    <option value="all">All</option>
-    {% for tag in all_tags %}
-      <option value="{{ tag | handle }}">{{ tag }}</option>
-    {% endfor %}
+<div class="shop_filter" style="padding-bottom: 50px;">
+  <h2 class="filter-title">Filter by Category:</h2>
+  <ul>
+    <li><a class="term-item active" href="*">All Products</a></li>
+      {% for tag in all_tags %}
+          <li><a class="term-item" href=".product_cat-{{ tag | handle }}">{{ tag }}</a></li>
+      {% endfor %}
+  </ul>
+</div>
+<div class="filter_mobile">
+  <select class="filters_select">
+    <option value="*">All Wines</option>
+      {% for tag in all_tags %}
+        <option value=".product_cat-{{ tag | handle }}">{{ tag }}</option>
+      {% endfor %}
   </select>
 </div>
 
 {% paginate collections.all.products by section.settings.products_per_page %}
 <div class="cru-product-collection">
     {% for product in collections.all.products %}
-        <div class="cru-product-item">
+        <div class="cru-product-item {% for tag in product.tags %}product_cat-{{ tag | handle }} {% endfor %}">
             <a href="{{ product.url }}">
                 <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}" class="product-image">
             </a>
@@ -44,7 +52,7 @@
             </div>
         </div>
     {% endfor %}
-    <div class="pagination">
+    {% comment %} <div class="pagination">
         <span class="page-info">Page {{ paginate.current_page }} of {{ paginate.pages }}</span>
         <div class="page-links">
             {% if paginate.previous %}
@@ -54,7 +62,7 @@
                 <a href="{{ paginate.next.url }}" class="next">Next</a>
             {% endif %}
         </div>
-    </div>
+    </div> {% endcomment %}
 </div>
 {% endpaginate %}
 

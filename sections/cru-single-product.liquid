@@ -1,0 +1,141 @@
+<section class="product-page">
+  <div class="product-wrapper">
+    <div class="product-image">
+      <img src="{{ product.featured_image | img_url: '800x' }}" alt="{{ product.title }}">
+    </div>
+
+    <div class="product-details">
+      <h1>{{ product.title }}</h1>
+      <p class="product-price">{{ product.price | money }}</p>
+      <div class="product-description">
+        {{ product.description }}
+      </div>
+
+        <form method="post" action="/cart/add" class="product-form">
+            <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+            <div class="quantity-wrapper">
+                <button type="button" class="qty-btn minus">−</button>
+                <input type="number" id="quantity" name="quantity" value="1" min="1">
+                <button type="button" class="qty-btn plus">+</button>
+            </div>
+
+            <button type="submit" class="add-to-cart">Add to Cart</button>
+        </form>
+        {% if product.metafields.custom.region or product.metafields.custom.winemaking or product.metafields.custom.winemaker or product.metafields.custom.history or product.metafields.custom.production or product.metafields.custom.grape_variety or
+    product.metafields.custom.aroma or product.metafields.custom.wine_vintage or product.metafields.custom.palate or product.metafields.custom.best_drinking or product.metafields.custom.colour or product.metafields.custom.alcohol %}
+        <div class="after_meta_links">
+		    <a class="anchor_link" targets="product-specifications" href="#"><i class="fa-solid fa-arrow-right-long"></i> Specifications</a>
+		</div>
+    {% endif %}
+    </div>
+  </div>
+</section>
+{% if product.metafields.custom.lifestyle_image %}
+    <div class="lifestyle-image" style="background-image: url('{{ product.metafields.custom.lifestyle_image | img_url }}');">
+    </div>
+{% endif %}
+{% if product.metafields.custom.region or product.metafields.custom.winemaking or product.metafields.custom.winemaker or product.metafields.custom.history or product.metafields.custom.production or product.metafields.custom.grape_variety or
+    product.metafields.custom.aroma or product.metafields.custom.wine_vintage or product.metafields.custom.palate or product.metafields.custom.best_drinking or product.metafields.custom.colour or product.metafields.custom.alcohol %}
+    <div id="product-specifications">
+        <div class="product-specifications-inner">
+            {% if product.metafields.custom.region %}
+                <div class="meta-item">
+                    <p class="specs_title">Region</p> <p class="specs_details">{{ product.metafields.custom.region }}</p>
+                </div>
+            {% endif %}
+            {% if product.metafields.custom.winemaking %}
+                <div class="meta-item">
+                    <p class="specs_title">Winemaking</p> <p class="specs_details">{{ product.metafields.custom.winemaking }}</p>
+                </div>
+            {% endif %}
+            {% if product.metafields.custom.winemaker %}
+                <div class="meta-item">
+                    <p class="specs_title">Winemaker</p> <p class="specs_details">{{ product.metafields.custom.winemaker }}</p>
+                </div>
+            {% endif %}
+            {% if product.metafields.custom.history %}
+                <div class="meta-item">
+                    <p class="specs_title">History</p> <p class="specs_details">{{ product.metafields.custom.history }}</p>
+                </div>
+            {% endif %}
+            {% if product.metafields.custom.production %}
+                <div class="meta-item">
+                    <p class="specs_title">Production</p> <p class="specs_details">{{ product.metafields.custom.production }}</p>
+                </div>
+            {% endif %}
+            {% if product.metafields.custom.grape_variety %}
+                <div class="meta-item">
+                    <p class="specs_title">Grape Variety</p> <p class="specs_details">{{ product.metafields.custom.grape_variety }}</p>
+                </div>
+            {% endif %}
+            {% if product.metafields.custom.aroma %}
+                <div class="meta-item">
+                    <p class="specs_title">Aroma</p> <p class="specs_details">{{ product.metafields.custom.aroma }}</p>
+                </div>
+            {% endif %}
+            {% if product.metafields.custom.wine_vintage %}
+                <div class="meta-item">
+                    <p class="specs_title">Wine Vintage</p> <p class="specs_details">{{ product.metafields.custom.wine_vintage }}</p>
+                </div>
+            {% endif %}
+            {% if product.metafields.custom.palate %}
+                <div class="meta-item">
+                    <p class="specs_title">Palate</p> <p class="specs_details">{{ product.metafields.custom.palate }}</p>
+                </div>
+            {% endif %}
+            {% if product.metafields.custom.best_drinking %}
+                <div class="meta-item">
+                    <p class="specs_title">Best Drinking</p> <p class="specs_details">{{ product.metafields.custom.best_drinking }}</p>
+                </div>
+            {% endif %}
+            {% if product.metafields.custom.colour %}
+                <div class="meta-item">
+                    <p class="specs_title">Colour</p> <p class="specs_details">{{ product.metafields.custom.colour }}</p>
+                </div>
+            {% endif %}
+            {% if product.metafields.custom.alcohol %}
+                <div class="meta-item">
+                    <p class="specs_title">Alcohol</p> <p class="specs_details">{{ product.metafields.custom.alcohol }}</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+{% endif %}
+{% if product.metafields.custom.product_big_image %}
+    <div class="big-image" style="background-image: url('{{ product.metafields.custom.product_big_image | img_url }}');">
+    </div>
+{% endif %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const qtyWrappers = document.querySelectorAll('.quantity-wrapper');
+
+    qtyWrappers.forEach(wrapper => {
+      const input = wrapper.querySelector('input[type="number"]');
+      const minus = wrapper.querySelector('.qty-btn.minus');
+      const plus = wrapper.querySelector('.qty-btn.plus');
+
+      minus.addEventListener('click', () => {
+        let val = parseInt(input.value, 10);
+        if (val > 1) input.value = val - 1;
+      });
+
+      plus.addEventListener('click', () => {
+        input.value = parseInt(input.value, 10) + 1;
+      });
+    });
+  });
+</script>
+
+{% schema  %}
+{
+  "name": "Cru Single Product",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Cru Single Produc",
+      "category": "CRU"
+    }
+  ]
+}
+{% endschema %}

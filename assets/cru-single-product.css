@@ -1,0 +1,117 @@
+section.product-page {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.product-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.product-image {
+    width: 50%;
+}
+
+.product-details {
+    width: 50%;
+}
+
+.quantity-wrapper input#quantity {
+    max-width: 50px;
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid;
+}
+
+.product-description {
+    max-width: 700px;
+    font-size: 15px;
+}
+
+.quantity-wrapper input#quantity::-webkit-outer-spin-button, .quantity-wrapper input#quantity::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    width: 0;
+}
+
+form.product-form {
+    display: flex;
+}
+
+.product-page .quantity-wrapper {
+    max-width: 150px;
+}
+
+.product-page button.add-to-cart {
+    background-color: transparent;
+    border: 1px solid;
+    font-size: 15px;
+    padding: 10px 25px;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.product-page button.add-to-cart:hover {
+    background-color: transparent;
+    border-color: #000;
+    color: #000;
+}
+
+.lifestyle-image {
+    min-height: 650px;
+    width: 100%;
+    background-size: cover;
+    margin-top: 55px;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.big-image {
+    min-height: 650px;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#product-specifications {
+    padding: 115px 0;
+    background-color: #231F20;
+    width: 100%;
+}
+
+.product-specifications-inner {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.meta-item {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px 0;
+    border-bottom: 1px solid;
+    color: #fff;
+    font-size: 15px;
+}
+
+p.specs_title {
+    width: 25%;
+    font-weight: 700;
+}
+
+p.specs_details {
+    width: 75%;
+}
+
+.after_meta_links {
+    margin-top: 90px;
+}
+
+.after_meta_links a {
+    color: #231F20;
+    display: block;
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-family: 'Inter-light';
+}
