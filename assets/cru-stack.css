@@ -73,3 +73,13 @@ a.link_to_shop {
     padding-left: 5%;
     text-align: left;
 }
+
+p.page_title_text {
+    margin-top: 0;
+    max-width: 75%;
+    font-size: 15px;
+}
+
+.wp-block-column.btn_col {
+    width: 25%;
+}
