@@ -15,7 +15,6 @@
         "slide_mxmNB7": {
           "type": "slide",
           "settings": {
-            "bg_image": "shopify://shop_images/Clarendon-Hills_Styled-Bottle-Photography_Feb11-2025_0523_LoRes.jpg",
             "y_alignment": "center",
             "x_alignment": "center",
             "mobile_y_alignment": "center",
@@ -37,7 +36,6 @@
         "slide_HpR7Kh": {
           "type": "slide",
           "settings": {
-            "bg_image": "shopify://shop_images/CH-VY-1.jpg",
             "y_alignment": "center",
             "x_alignment": "center",
             "mobile_y_alignment": "center",
@@ -59,7 +57,6 @@
         "slide_EmMKY6": {
           "type": "slide",
           "settings": {
-            "bg_image": "shopify://shop_images/Clarendon-Hills-Vineyard.jpg",
             "y_alignment": "center",
             "x_alignment": "center",
             "mobile_y_alignment": "center",
@@ -468,7 +465,6 @@
         "large_img_J3cwri": {
           "type": "largeImg",
           "settings": {
-            "image": "shopify://shop_images/017e9465359a329a0e23369a5bc0bc77-1.jpg",
             "enable_max_width_image": false,
             "custom_width_image": 1170,
             "border_radius": 0,
@@ -484,7 +480,7 @@
             "font_weight_sub_title": "700",
             "sub_title_position": "sub_title_above",
             "color_sub_title": "#232323",
-            "color_sub_title_mb": "#fff",
+            "color_sub_title_mb": "#ffffff",
             "heading": "Our Terroir",
             "special_text": "",
             "letter_spacing_heading": "",
@@ -493,18 +489,18 @@
             "font_size_heading_mb": 24,
             "margin_bottom_heading": 20,
             "font_weight_heading": "600",
-            "color_heading": "#FFFFFF",
-            "color_heading_mb": "#fff",
+            "color_heading": "#ffffff",
+            "color_heading_mb": "#ffffff",
             "border_title": "border_s1",
-            "border_color_title": "#FFFFFF",
-            "border_color_title_mobile": "#fff",
+            "border_color_title": "#ffffff",
+            "border_color_title_mobile": "#ffffff",
             "text": "The story of McLaren Vale’s terroir began over 1600 million years ago and today ancient fragments ripple across the greater region like a giant patchwork quilt. Close proximity to the Great Southern Ocean and St Vincent Gulf, in combination with incredible old vine material, indeed forge wines that express a unique liveliness that typify the regional expression. With freshness and bright natural acidity derived from the marine climate, there’s an exotic and kaleidoscopic luminescence to McLaren Vale’s wines. Clarendon Hills has devoted its focus over the last 3 decades to highlighting the very best terroirs of Blewitt Springs and Clarendon sub districts.",
             "font_size_des": 12,
             "font_size_des_mb": 12,
             "line_height_des": 26,
             "margin_bottom_des": 35,
-            "color_des": "#FFFFFF",
-            "color_des_mb": "#fff",
+            "color_des": "#ffffff",
+            "color_des_mb": "#ffffff",
             "countdown": "",
             "hide_countdown_fc": "countdown",
             "countdown_style": "round",
@@ -512,7 +508,7 @@
             "font_size_countdown_number": 30,
             "font_size_countdown_text": 14,
             "color_countdown": "#232323",
-            "color_countdown_mb": "#fff",
+            "color_countdown_mb": "#ffffff",
             "countdown_margin_bottom": 35,
             "content_width": 475,
             "bg_color_content": "",
@@ -526,29 +522,30 @@
             "btn_icon": "",
             "button_1_width": 235,
             "enable_button_custom_border": false,
-            "button_color": "#fff",
+            "button_color": "#ffffff",
             "button_border": "#232323",
             "button_background": "#232323",
             "button_background_gradient": "",
-            "button_color_hover": "#fff",
+            "button_color_hover": "#ffffff",
             "button_border_hover": "#232323",
             "button_background_hover": "#232323",
             "button_background_gradient_hover": "",
             "btn_text_2": "",
             "link_2": "",
             "btn_icon_2": "",
-            "button_color_2": "#fff",
+            "button_color_2": "#ffffff",
             "button_border_2": "#232323",
             "button_background_2": "#232323",
             "button_background_2_gradient": "",
-            "button_color_hover_2": "#fff",
+            "button_color_hover_2": "#ffffff",
             "button_border_hover_2": "#232323",
             "button_background_hover_2": "#232323",
             "button_background_gradient_hover_2": "",
+            "video_link": "",
             "adaptive_height_video": "56",
             "icon_style": "style_1",
-            "color_icon": "#fff",
-            "bg_color_icon": "#000",
+            "color_icon": "#ffffff",
+            "bg_color_icon": "#000000",
             "enable_custom_video_icon_position": false,
             "video_icon_horizontal_position": "",
             "video_icon_vertical_position": "",
@@ -636,7 +633,7 @@
         "enable_minus_mg_top": false,
         "minus_spacing_top": -100,
         "product_block_layout": "scroll",
-        "product_bg": "#fff",
+        "product_bg": "#ffffff",
         "product_bg_gradient": "",
         "product_block_collection": "",
         "product_block_limit": 8,
@@ -678,7 +675,7 @@
         "button_icon": "",
         "mg_bottom_button": 55,
         "enable_button_shadow": false,
-        "color_button": "#fff",
+        "color_button": "#ffffff",
         "border_color_button": "#232323",
         "bg_color_button": "#232323",
         "bg_color_gradient_button": "",
@@ -721,20 +718,20 @@
         "scroll_width": 100,
         "scroll_height": 4,
         "scroll_track_bg": "#f1f1f1",
-        "scroll_thumb_color": "#000",
-        "scroll_thumb_hover_color": "#444",
+        "scroll_thumb_color": "#000000",
+        "scroll_thumb_hover_color": "#444444",
         "position": "left",
         "width_banner": 40,
         "enable_image_mb": true,
         "display_list_collection": false,
         "collection_color": "#202020",
         "collection_color_hover": "#3e8cc4",
-        "collection_bg_color": "#fff",
+        "collection_bg_color": "#ffffff",
         "collection_bg_color_gradient": "",
         "text_list": "View all categories",
         "url_list": "",
         "enable_layout_special": false,
-        "bg_card": "#fff",
+        "bg_card": "#ffffff",
         "padding_card": 15,
         "border_radius_card": 5,
         "border_layout_card": "full",
@@ -746,6 +743,163 @@
         "mg_bottom_desktop": 50,
         "mg_bottom_tablet": 50,
         "mg_bottom_mobile": 50
+      }
+    },
+    "cru_2_col_YVCXzG": {
+      "type": "cru-2-col",
+      "blocks": {
+        "text_column_tq7dwH": {
+          "type": "text_column",
+          "settings": {
+            "heading": "Sample Heading",
+            "column_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "show_button": true,
+            "button_link": "https://example.com",
+            "button_text": "Learn More"
+          }
+        },
+        "image_column_BqqEEk": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/tawny.jpg",
+            "image_alt": "Image"
+          }
+        }
+      },
+      "block_order": [
+        "text_column_tq7dwH",
+        "image_column_BqqEEk"
+      ],
+      "name": "CRU 2 Column",
+      "settings": {
+        "class": "",
+        "id": "",
+        "is_reversed": false
+      }
+    },
+    "cru_2_col_HakCfU": {
+      "type": "cru-2-col",
+      "blocks": {
+        "text_column_DhpYYy": {
+          "type": "text_column",
+          "settings": {
+            "heading": "Sample Heading",
+            "column_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "show_button": true,
+            "button_link": "https://example.com",
+            "button_text": "Learn More"
+          }
+        },
+        "image_column_Egq3pQ": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/tawny.jpg",
+            "image_alt": "Image"
+          }
+        }
+      },
+      "block_order": [
+        "text_column_DhpYYy",
+        "image_column_Egq3pQ"
+      ],
+      "name": "CRU 2 Column",
+      "settings": {
+        "class": "",
+        "id": "",
+        "is_reversed": true
+      }
+    },
+    "cru_cta_grid_Y8Cgxt": {
+      "type": "cru-cta-grid",
+      "blocks": {
+        "cta_block_UtC83T": {
+          "type": "cta_block",
+          "settings": {
+            "background_image": "shopify://shop_images/tawny.jpg",
+            "title": "Call to Action",
+            "description": "This is a call to action section.",
+            "button_link": "https://example.com",
+            "button_text": "Learn More"
+          }
+        },
+        "cta_block_8JHCHe": {
+          "type": "cta_block",
+          "settings": {
+            "background_image": "shopify://shop_images/tawny.jpg",
+            "title": "Call to Action",
+            "description": "This is a call to action section.",
+            "button_link": "https://example.com",
+            "button_text": "Learn More"
+          }
+        },
+        "cta_block_VHjARg": {
+          "type": "cta_block",
+          "settings": {
+            "background_image": "shopify://shop_images/tawny.jpg",
+            "title": "Call to Action",
+            "description": "This is a call to action section.",
+            "button_link": "https://example.com",
+            "button_text": "Learn More"
+          }
+        }
+      },
+      "block_order": [
+        "cta_block_UtC83T",
+        "cta_block_8JHCHe",
+        "cta_block_VHjARg"
+      ],
+      "name": "CRU CTA Grid",
+      "settings": {}
+    },
+    "cru_reviews_TJzNPw": {
+      "type": "cru-reviews",
+      "blocks": {
+        "review_DcDJFD": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "CRU",
+            "review_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "show_date": true,
+            "review_date": "July 29, 2025",
+            "show_rating": true,
+            "review_rating": "5"
+          }
+        },
+        "review_kQ7Kjx": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Chris",
+            "review_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "show_date": true,
+            "review_date": "June 29, 2025",
+            "show_rating": true,
+            "review_rating": "4"
+          }
+        },
+        "review_mhXUzr": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "John",
+            "review_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "show_date": false,
+            "review_date": "May 25, 2025",
+            "show_rating": true,
+            "review_rating": "5"
+          }
+        }
+      },
+      "block_order": [
+        "review_DcDJFD",
+        "review_kQ7Kjx",
+        "review_mhXUzr"
+      ],
+      "name": "CRU Reviews",
+      "settings": {
+        "section_title": "What Our Customers Say",
+        "section_subtitle": "Real reviews from our valued customers",
+        "background_color": "#f9f9f9",
+        "id": "",
+        "class": ""
       }
     },
     "cru_newsletter_YtA4yq": {
@@ -770,6 +924,16 @@
         "show_email_label": false,
         "submit_button_text": "Join Us"
       }
+    },
+    "cru_contact_map_nJkcDh": {
+      "type": "cru-contact-map",
+      "name": "CRU Contact Map",
+      "settings": {
+        "id": "",
+        "class": "",
+        "left_content": "<h2>Opening Hours</h2>\n<p>Cellar Door open daily 10am – 5pm\n<br>\nRestaurant open daily 12pm – 3pm\n<br>\nOffice Hours: Monday – Friday 9am – 5pm\n<br>\nEstate Closed: Christmas Day, Boxing Day, New Year’s Day and Good Friday.</p>\n<br>\n<br>\n<p>Victoria, Australia</p>\n\n<div class=\"maps_buttons\">\n<a href=\"#\">Get Directions</a>\n<a href=\"#\">Make Reservations</a>\n</div>",
+        "map_iframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509198!2d144.9537353153165!3d-37.81627997975157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11f5b7%3A0x5045675218ceed30!2sGoogle!5e0!3m2!1sen!2sus!4v1616161616161!5m2!1sen!2sus\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>"
+      }
     }
   },
   "order": [
@@ -784,6 +948,11 @@
     "image_banner_8eWBiH",
     "cru_stack_pUnwNe",
     "product_block_baNK86",
+    "cru_2_col_YVCXzG",
+    "cru_2_col_HakCfU",
+    "cru_cta_grid_Y8Cgxt",
+    "cru_reviews_TJzNPw",
+    "cru_contact_map_nJkcDh",
     "cru_newsletter_YtA4yq"
   ]
 }
