@@ -16,7 +16,6 @@
       "name": "CRU Header Centered Logo",
       "settings": {
         "menu": "main-menu",
-        "logo": "shopify://shop_images/google-CH-logo-300x42-1.webp",
         "show_login_icon": true,
         "show_cart_icon": true,
         "social_ig": false,
@@ -89,10 +88,16 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "cru_side_cart_Uw3z7t": {
+      "type": "cru-side-cart",
+      "name": "CRU Side Cart",
+      "settings": {}
     }
   },
   "order": [
     "cru_header_1_fjeqqT",
-    "header-mobile"
+    "header-mobile",
+    "cru_side_cart_Uw3z7t"
   ]
 }
