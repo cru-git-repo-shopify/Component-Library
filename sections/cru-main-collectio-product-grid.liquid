@@ -22,8 +22,26 @@
 <div class="cru-product-collection">
     {% for product in collections.all.products %}
         <div class="cru-product-item {% for tag in product.tags %}product_cat-{{ tag | handle }} {% endfor %}">
+          {% assign points = product.metafields.custom.award_points %}
+          {% assign badges = product.metafields.custom.award_badge %}
+          {%  assign index = 0 %}
+          {% if points != blank or badges != blank %}
+            <div class="product_awards">
+              {% if points != blank %}
+                {% for award in points.value %}
+                  <p class="award award_accolade" style="z-index: {{ index }};"><span class="points">{{ award }}</span><span class="type">PTS</span></p>
+                  {% assign index = index | plus: 1 %}
+                {% endfor %}
+              {% endif %}
+              {% for badge in badges.value %}
+                <img src="{{ badge | img_url: 'large' }}" alt="Award Badge" class="badge award_accolade" style="z-index: {{ index }};">
+                {% assign index = index | plus: 1 %}
+              {% endfor %}
+            </div>
+            {% endif %}
+          
             <a href="{{ product.url }}">
-                <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}" class="product-image">
+                <img src="{{ product.featured_image | img_url: 'large' }}" alt="{{ product.title }}" class="product-image ">
             </a>
             <div class="product-info">
                 <p class="product-title"><a href="{{ product.url }}">{{ product.title }}</a></p>
@@ -104,6 +122,8 @@ document.addEventListener('DOMContentLoaded', function () {
       })
       .then(res => res.json())
       .then(data => {
+        updateCart();
+        openCart(); // Open the cart sidebar
         // statusSpan.textContent = "Added!";
         // statusSpan.style.color = "green";
         // setTimeout(() => statusSpan.textContent = '', 2000);
@@ -114,7 +134,81 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   });
+
+  // Update Cart Function
+    function updateCart() {
+      fetch('/cart.js')
+        .then(res => res.json())
+        .then(cart => {
+          const itemsContainer = document.getElementById('ajax-cart-items');
+          const subtotal = document.getElementById('ajax-cart-subtotal');
+          itemsContainer.innerHTML = '';
+
+          if (cart.items.length === 0) {
+            itemsContainer.innerHTML = '<p class="text-gray-500">Your cart is empty.</p>';
+          } else {
+            cart.items.forEach((item, index) => {
+              itemsContainer.innerHTML += `
+                <div class="flex items-start side-cart-item">
+                  <img src="${item.image}" alt="${item.title}" class="w-16 h-16 object-cover border rounded">
+                  <div class="cart-item-details">
+                    <div class="font-semibold cart-item-title">${item.product_title}</div>
+                    <div class="text-sm text-gray-500">Qty: ${item.quantity}</div>
+                    <div>${Shopify.formatMoney(item.line_price)}</div>
+                  </div>
+                  <button 
+                    class="text-red-500 hover:text-red-700 text-sm remove-cart-item"
+                    data-line="${index + 1}"
+                    title="Remove"
+                  >✕</button>
+                </div>
+              `;
+            });
+          }
+
+          subtotal.textContent = Shopify.formatMoney(cart.total_price);
+
+          // Bind remove buttons
+          document.querySelectorAll('.remove-cart-item').forEach(button => {
+            button.addEventListener('click', function () {
+              const line = this.getAttribute('data-line');
+
+              fetch('/cart/change.js', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                  'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                  line: parseInt(line),
+                  quantity: 0
+                })
+              })
+              .then(res => res.json())
+              .then(data => {
+                updateCart();
+              });
+            });
+          });
+        });
+    }
+    
+
+    function openCart() {
+      const cartSidebar = document.getElementById('ajax-cart-sidebar');
+      const overlay = document.getElementById('cart-overlay');
+      cartSidebar.classList.remove('hidden');
+      overlay.classList.remove('hidden');
+    }
+
+    if (typeof Shopify === 'undefined') {
+      var Shopify = {};
+    }
+    Shopify.formatMoney = function(cents) {
+      return '$' + (cents / 100).toFixed(2);
+    }
 });
+
 </script>
 
 {% schema %}

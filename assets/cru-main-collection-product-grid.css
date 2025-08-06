@@ -114,3 +114,32 @@ h2.filter-title {
 .filter_mobile {
     display: none;
 }
+
+.product_awards {
+    position: absolute;
+}
+
+p.award {
+    background-color: #000;
+    color: #fff;
+    border-radius: 50px;
+    padding: 19px 17px;
+    text-align: center;
+    line-height: 1;
+    font-size: 15px;
+    position: relative;
+    margin: 0;
+}
+
+span.type {
+    display: block;
+}
+
+.award_accolade:not(:first-child) {
+    margin-top: -10px;
+}
+
+img.badge {
+    max-width: 68px;
+    position: relative;
+}

@@ -1,6 +1,23 @@
 <section class="product-page">
   <div class="product-wrapper">
     <div class="product-image">
+        {% assign points = product.metafields.custom.award_points %}
+          {% assign badges = product.metafields.custom.award_badge %}
+          {%  assign index = 0 %}
+          {% if points != blank or badges != blank %}
+            <div class="product_awards">
+              {% if points != blank %}
+                {% for award in points.value %}
+                  <p class="award award_accolade" style="z-index: {{ index }};"><span class="points">{{ award }}</span><span class="type">PTS</span></p>
+                  {% assign index = index | plus: 1 %}
+                {% endfor %}
+              {% endif %}
+              {% for badge in badges.value %}
+                <img src="{{ badge | img_url: 'large' }}" alt="Award Badge" class="badge award_accolade" style="z-index: {{ index }};">
+                {% assign index = index | plus: 1 %}
+              {% endfor %}
+            </div>
+            {% endif %}
       <img src="{{ product.featured_image | img_url: '800x' }}" alt="{{ product.title }}">
     </div>
 
@@ -31,7 +48,7 @@
   </div>
 </section>
 {% if product.metafields.custom.lifestyle_image %}
-    <div class="lifestyle-image" style="background-image: url('{{ product.metafields.custom.lifestyle_image | img_url }}');">
+    <div class="lifestyle-image" style="background-image: url('{{ product.metafields.custom.lifestyle_image | img_url: 'original' }}');">
     </div>
 {% endif %}
 {% if product.metafields.custom.region or product.metafields.custom.winemaking or product.metafields.custom.winemaker or product.metafields.custom.history or product.metafields.custom.production or product.metafields.custom.grape_variety or
@@ -102,7 +119,7 @@
     </div>
 {% endif %}
 {% if product.metafields.custom.product_big_image %}
-    <div class="big-image" style="background-image: url('{{ product.metafields.custom.product_big_image | img_url }}');">
+    <div class="big-image" style="background-image: url('{{ product.metafields.custom.product_big_image | img_url: 'original' }}');">
     </div>
 {% endif %}
 

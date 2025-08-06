@@ -1,0 +1,128 @@
+<!-- Sidebar Cart -->
+<div id="ajax-cart-sidebar" class="hidden fixed">
+  <div class="side-cart-inner">
+    <div class="side-cart-header">
+      <h2 class="">Your Cart</h2>
+      <button id="close-cart">&times;</button>
+    </div>
+    <div id="ajax-cart-items">
+      <!-- Cart items will be dynamically inserted here -->
+    </div>
+    <div class="side-cart-footer">
+      <div class="flex cart-totals">
+        <span class="font-semibold">Subtotal:</span>
+        <span id="ajax-cart-subtotal"></span>
+      </div>
+      <div class="side-cart-actions">
+        <a href="/cart" class="cart-action">View Cart</a>
+        <a href="/checkout" class="cart-action">Checkout</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Cart Overlay -->
+<div id="cart-overlay" class="hidden fixed inset-0 bg-black/50 z-40"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Open/Close Cart Sidebar
+    const cartSidebar = document.getElementById('ajax-cart-sidebar');
+    const overlay = document.getElementById('cart-overlay');
+    const closeBtn = document.getElementById('close-cart');
+    const openBtn = document.querySelector('.open-cart');
+
+    openBtn.addEventListener('click', function() {
+      cartSidebar.classList.remove('hidden');
+      overlay.classList.remove('hidden');
+    });
+
+    closeBtn.addEventListener('click', closeCart);
+    overlay.addEventListener('click', closeCart);
+
+    function closeCart() {
+      cartSidebar.classList.add('hidden');
+      overlay.classList.add('hidden');
+    }
+
+    if (typeof Shopify === 'undefined') {
+      var Shopify = {};
+    }
+    Shopify.formatMoney = function(cents) {
+      return '$' + (cents / 100).toFixed(2);
+    }
+
+    function updateCart() {
+      fetch('/cart.js')
+        .then(res => res.json())
+        .then(cart => {
+          const itemsContainer = document.getElementById('ajax-cart-items');
+          const subtotal = document.getElementById('ajax-cart-subtotal');
+          itemsContainer.innerHTML = '';
+
+          if (cart.items.length === 0) {
+            itemsContainer.innerHTML = '<p class="text-gray-500">Your cart is empty.</p>';
+          } else {
+            cart.items.forEach((item, index) => {
+              itemsContainer.innerHTML += `
+                <div class="flex items-start side-cart-item">
+                  <img src="${item.image}" alt="${item.title}" class="w-16 h-16 object-cover border rounded">
+                  <div class="cart-item-details">
+                    <div class="font-semibold cart-item-title">${item.product_title}</div>
+                    <div class="text-sm text-gray-500">Qty: ${item.quantity}</div>
+                    <div>${Shopify.formatMoney(item.line_price)}</div>
+                  </div>
+                  <button 
+                    class="text-red-500 hover:text-red-700 text-sm remove-cart-item"
+                    data-line="${index + 1}"
+                    title="Remove"
+                  >✕</button>
+                </div>
+              `;
+            });
+          }
+
+          subtotal.textContent = Shopify.formatMoney(cart.total_price);
+
+          // Bind remove buttons
+          document.querySelectorAll('.remove-cart-item').forEach(button => {
+            button.addEventListener('click', function () {
+              const line = this.getAttribute('data-line');
+
+              fetch('/cart/change.js', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                  'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                  line: parseInt(line),
+                  quantity: 0
+                })
+              })
+              .then(res => res.json())
+              .then(data => {
+                updateCart();
+              });
+            });
+          });
+        });
+    }
+
+  updateCart(); // Initial cart update
+    
+});
+</script>
+
+{% schema %}
+{
+    "name": "CRU Side Cart",
+    "settings": [],
+    "presets": [
+        {
+            "name": "CRU Side Cart",
+            "category": "Custom"
+        }
+    ]
+}
+{% endschema %}
