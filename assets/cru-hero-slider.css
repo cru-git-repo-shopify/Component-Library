@@ -125,3 +125,48 @@ a.hero_slider_prev:before {
 .hero_main_container.slick-initialized.slick-slider.slick-dotted {
     margin-bottom: 0;
 }
+
+@media only screen and (max-width: 781px){
+    .hero_txt_content {
+        display: none
+    }
+
+    .hero_content {
+        background-image: none!important;
+        height: auto!important
+    }
+
+    .mobile_background {
+        display: block!important;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center
+    }
+
+    .hero_txt_content_mobile {
+        display: block!important;
+        background-color: #231f20;
+        padding: 40px 0;
+        padding-left: 5%;
+        padding-right: 5%
+    }
+
+    a.hero_slider_next,a.hero_slider_prev {
+        position: relative;
+        right: unset;
+        bottom: unset;
+        width: 100%;
+        background-color: #231f20;
+        padding: 0 5%;
+        padding-bottom: 40px;
+        line-height: 1;
+        font-size: 40px;
+        display: block;
+        left: unset
+    }
+
+    .hero_content:before {
+        display: none
+    }
+}

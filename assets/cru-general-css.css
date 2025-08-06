@@ -38,3 +38,16 @@ div#terrior {
 main#MainContent {
     padding: 0;
 }
+
+@media only screen and (max-width: 781px) {
+   .content-box.content-box--absolute.content-box--left.text-left.align-items--center {
+        position: relative;
+        display: block;
+        top: 0!important;
+        transform: none;
+        right: unset!important;
+        width: 100%!important;
+        background-color: #000!important;
+        padding: 30px 5% 30px;
+    }
+}

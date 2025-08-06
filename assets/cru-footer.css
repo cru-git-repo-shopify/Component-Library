@@ -30,4 +30,7 @@ ul.footer_bottom a { text-decoration: underline!important; }
 	.cru_footer ul.footer_bottom li:last-child { display: block; margin-top: 24px; }
 	.cru_footer ul.footer_bottom li:nth-last-child(3) {margin-right: 0;}
 	.cru_footer ul.footer_bottom li:nth-last-child(2) { margin-right: 0; margin-top: 20px; }
+	.cru_footer ul {
+		padding: 0;
+	}
 }

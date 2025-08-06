@@ -63,3 +63,14 @@ div#contact-section {
     background-color: #000;
     margin: 24px 0 0;
 }
+
+@media only screen and (max-width: 781px) {
+    .left-content {
+        width: 100%!important;
+        padding: 50px 5% 75px!important;
+    }
+
+    .map-iframe {
+        width: 100%!important;
+    }
+}

@@ -101,3 +101,14 @@ a.cart-action:hover {
     padding: 20px 0 50px;
     position: relative;
 }
+
+@media only screen and (max-width: 600px) {
+    div#ajax-cart-sidebar {
+        max-width: 100%;
+    }
+
+    #ajax-cart-items img {
+        object-fit: contain;
+        object-position: center;
+    }
+}

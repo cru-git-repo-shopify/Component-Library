@@ -27,3 +27,18 @@
 .col-reversed .text-column {
     padding: 50px 5% 50px 50px;
 }
+
+@media only screen and (max-width: 781px) {
+    .text-column, .image-column {
+        width: 100%;
+    }
+
+    .cru-2-col {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .text-column {
+        padding: 50px 5%!important;
+    }
+}

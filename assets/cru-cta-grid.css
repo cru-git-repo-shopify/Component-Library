@@ -31,3 +31,17 @@ img.cta-background {
 .cta-overlay * {
     color: #fff;
 }
+
+@media only screen and (max-width: 781px) {
+    .cta-block {
+        width: 100%!important;
+    }
+
+    .cru-cta-grid {
+        flex-wrap: wrap;
+    }
+
+    .cta-overlay {
+        padding: 50px 25px;
+    }
+}

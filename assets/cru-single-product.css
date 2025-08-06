@@ -115,3 +115,27 @@ p.specs_details {
     font-size: 18px;
     font-family: 'Inter-light';
 }
+
+@media only screen and (max-width: 781px) {
+    .product-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .product-image, .product-details {
+        width: 100%;
+    }
+
+    .product-details {
+        margin-top: 50px;
+    }
+
+    .product-specifications-inner {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .lifestyle-image {
+        min-height: 450px;
+    }
+}

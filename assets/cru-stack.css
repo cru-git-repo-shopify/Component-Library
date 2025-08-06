@@ -83,3 +83,20 @@ p.page_title_text {
 .wp-block-column.btn_col {
     width: 25%;
 }
+
+@media only screen and (max-width: 781px){
+    .in-grid {
+        max-width: 90%;
+    }
+    .prod_section-header {
+        padding-left: 0;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .prod_slider_txt {
+        padding-left: 0!important;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}

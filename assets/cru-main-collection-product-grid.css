@@ -143,3 +143,51 @@ img.badge {
     max-width: 68px;
     position: relative;
 }
+
+@media only screen and (max-width: 1400px) {
+    .quantity-wrapper button.qty-btn {
+        padding: 10px 15px;
+    }
+
+    .cru-product-item {
+        width: calc(34% - 75px)!important;
+        margin-right: 15px!important;
+        padding: 35px 20px!important;
+    }
+
+    .add-to-cart-wrapper button.add-to-cart-button {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .cru-product-item {
+        width: calc(51% - 75px)!important;
+    }
+    .page-subheading .wp-block-column {
+        width: 100%;
+    }
+
+    .page-subheading {
+        flex-wrap: wrap;
+    }
+
+    p.page_title_text {
+        max-width: 100%;
+    }
+
+    .btn_col a.button {
+        margin-left: 0;
+    }
+
+    .wp-block-column.btn_col {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .cru-product-item {
+        width: calc(90%)!important;
+        margin-right: 0!important;
+    }
+}
