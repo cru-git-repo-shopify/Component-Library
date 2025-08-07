@@ -143,8 +143,9 @@ a.hamburger_close {
 }
 
 .logo img {
-    max-height: 150px;
-    margin: 0 auto
+    max-height: 50px;
+    margin: 0 auto;
+    width: auto;
 }
 
 .header-container.logo_centered_left_hamb .header_left_area {
