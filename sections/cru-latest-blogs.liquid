@@ -6,9 +6,11 @@
 				<div class="inner-wrapper">
 				<div class="post-title">{{ article.title }}</div>
 				{% comment %} <div class="post-excerpt">{{ article.excerpt | strip_html }}</div> {% endcomment %}
-				<div class="button-wrapper">
-				  <a class="general_btn wht_btn" href="{{ article.url }}">{{ section.settings.btn_txt }}</a>
-				</div>
+                 {% if section.settings.show_btn %}
+                    <div class="button-wrapper">
+                    <a class="general_btn wht_btn" href="{{ article.url }}">{{ section.settings.btn_txt }}</a>
+                    </div>
+				{% endif %}
 				</div>
 			</div>
 		</div>
