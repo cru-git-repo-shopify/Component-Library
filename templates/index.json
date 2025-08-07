@@ -164,7 +164,7 @@
         "section_id": "",
         "section_class": "",
         "nmbr_post": 3,
-        "show_btn": false,
+        "show_btn": true,
         "btn_txt": "Read More"
       }
     },
