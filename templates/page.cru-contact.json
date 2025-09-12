@@ -32,16 +32,16 @@
       "name": "CRU Stack",
       "settings": {
         "id": "",
-        "class": ""
+        "class": "page_title"
       }
     },
     "cru_contact_col_aNGtw9": {
       "type": "cru-contact-col",
       "name": "CRU Contact Section",
       "settings": {
-        "right_background_image": "shopify://shop_images/Astralis-series.jpg",
-        "heading": "Do you have any questions forClarendon Hills?",
-        "description": "If so, please enter your details below and we’ll do our best to assist.",
+        "right_background_image": "shopify://shop_images/OT0713.jpg",
+        "heading": "Get in touch",
+        "description": "if there’s anything else we can help you with…",
         "section_id": "contact-section",
         "section_class": "cru-contact-col",
         "show_first_name": true,
@@ -49,15 +49,18 @@
         "show_last_name": true,
         "last_name_placeholder": "Last Name",
         "show_email": true,
+        "show_phone": true,
+        "phone_placeholder": "Enter your phone number",
         "email_placeholder": "Email",
         "show_message": true,
         "message_placeholder": "Please leave us a detailed message here.",
         "show_submit_button": true,
-        "submit_button_text": "Send Message"
+        "submit_button_text": "Submit"
       }
     },
     "cru_newsletter_NcfRBw": {
       "type": "cru-newsletter",
+      "disabled": true,
       "name": "CRU Newsletter",
       "settings": {
         "section_id": "",

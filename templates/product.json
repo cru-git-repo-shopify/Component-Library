@@ -534,12 +534,34 @@
       "type": "cru-single-product",
       "name": "Cru Single Produc",
       "settings": {}
+    },
+    "cru_ot_wc_section_xQhqtK": {
+      "type": "cru-ot-wc-section",
+      "name": "CRU Club Section",
+      "settings": {
+        "cru_club_image": "shopify://shop_images/golf-cart-with-dogs-with-logo-1.png",
+        "cru_club_title": "OTT CLUB",
+        "cru_club_subtitle": "JOIN THE EXCLUSIVE",
+        "cru_club_benefit_1": "FREE FREIGHT",
+        "cru_club_benefit_2": "GREAT DISCOUNTS",
+        "cru_club_benefit_3": "EXCLUSIVE WINES",
+        "cru_club_benefit_4": "MEMBER EVENTS"
+      }
+    },
+    "cru_related_products_Ya3zXK": {
+      "type": "cru-related-products",
+      "name": "CRU Related Products",
+      "settings": {
+        "title": "TRY THESE TOO"
+      }
     }
   },
   "order": [
     "main",
     "product-recommendations",
     "product-recently-viewed",
-    "cru_single_product_fWnRnj"
+    "cru_single_product_fWnRnj",
+    "cru_ot_wc_section_xQhqtK",
+    "cru_related_products_Ya3zXK"
   ]
 }

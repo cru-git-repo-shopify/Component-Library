@@ -126,13 +126,13 @@
     font-style: italic;
     letter-spacing: var(--body-letter-spacing);
     line-height: var(--body-line-height);
-    margin: 0 0 40px 0;
+    /* margin: 0 0 40px 0; */
     color: var(--color-text);
     background: var(--bg-white);
     border-radius: 0;
-    text-align: center;
+    /* text-align: center; */
     border: none;
-    padding: 48px 30px 45px 30px;
+    /* padding: 48px 30px 45px 30px; */
     position: relative;
 }
 

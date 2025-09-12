@@ -1,0 +1,108 @@
+{% assign first_tag = product.tags.first %}
+{% assign pool = collections['all'].products %}
+{% assign related_products = pool | where_exp: 'p', 'p.tags contains related_tag' %}
+{% if related_products.size > 0 %}
+    <div class="related-products">
+        <h2>{{section.settings.title}}</h2>
+        <div class="product-slider-container">
+            <div class="cru-product-slider">
+                {% assign shown = 0 %}
+                {% for related_product in related_products %}
+                    {% assign has_common_tag = false %}
+                    {% for tag in product.tags %}
+                        {% if related_product.tags contains tag %}
+                            {% assign has_common_tag = true %}
+                            {% break %}
+                        {% endif %}
+                    {% endfor %}
+                    {% if has_common_tag %}
+                        {% if related_product.id != product.id %}
+                            <div class="product-item-slider {% for tag in related_product.tags %}product_cat-{{ tag | handle }} {% endfor %}">
+                                {% assign points = related_product.metafields.custom.award_points %}
+                                {% assign badges = related_product.metafields.custom.award_badge %}
+                                {%  assign index = 0 %}
+                                {% if related_product.metafields.custom.label != blank %}
+                                    {%  if related_product.metafields.custom.special_label %}
+                                    {%  assign label_type =  'special' %}
+                                    {% else %}
+                                    {%  assign label_type =  'normal' %}
+                                    {% endif %}
+                                    <div class="product-custom-label orange {{ label_type }}"><p>{{ related_product.metafields.custom.label }}</p></div>
+                                {% endif %}
+                                {% if points != blank or badges != blank %}
+                                    <div class="product_awards">
+                                    {% if points != blank %}
+                                        {% for award in points.value %}
+                                        <p class="award award_accolade" style="z-index: {{ index }};"><span class="points">{{ award }}</span><span class="type">PTS</span></p>
+                                        {% assign index = index | plus: 1 %}
+                                        {% endfor %}
+                                    {% endif %}
+                                    {% for badge in badges.value %}
+                                        <img src="{{ badge | img_url: 'large' }}" alt="Award Badge" class="badge award_accolade" style="z-index: {{ index }};">
+                                        {% assign index = index | plus: 1 %}
+                                    {% endfor %}
+                                    </div>
+                                    {% endif %}
+                                
+                                    <a href="{{ related_product.url }}">
+                                        <img src="{{ related_product.featured_image | img_url: 'large' }}" alt="{{ related_product.title }}" class="product-image ">
+                                    </a>
+                                    <div class="product-info">
+                                        <p class="product-title"><a href="{{ related_product.url }}">{{ related_product.title }}</a></p>
+                                        <p class="product-price">{{ related_product.price | money }}</p>
+                                        {% if related_product.available %}
+                                            <div class="ajax-add-to-cart" data-variant-id="{{ product.variants.first.id }}">
+                                                <div class="quantity-wrapper">
+                                                <div class="quantity-wrapper-inner">
+                                                    <button type="button" class="qty-btn minus">−</button>
+                                                    <input
+                                                        type="number"
+                                                        name="quantity"
+                                                        min="1"
+                                                        value="1"
+                                                        class="quantity-input"
+                                                    >
+                                                    <button type="button" class="qty-btn plus">+</button>
+                                                </div>
+                                                </div>
+                                                <div class="add-to-cart-wrapper">
+                                                    <button class="add-to-cart-button">Add to Cart</button>
+                                                    {% comment %} <span class="add-status"></span> {% endcomment %}
+                                                </div>
+                                            </div>
+                                            {% else %}
+                                            <p class="sold-out">Sold Out</p>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            {% assign shown = shown | plus: 1 %}
+                            {% if shown >= 4 %}
+                                {% break %}
+                            {% endif %}
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+{%  schema  %} 
+  {
+    "name": "Related Products",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title",
+        "default": "Related Products"
+      }
+    ],
+    "presets": [
+      {
+        "name": "CRU Related Products",
+        "category": "CRU"
+      }
+    ]
+  }
+{% endschema %}

@@ -42,6 +42,9 @@
     product.metafields.custom.aroma or product.metafields.custom.wine_vintage or product.metafields.custom.palate or product.metafields.custom.best_drinking or product.metafields.custom.colour or product.metafields.custom.alcohol %}
         <div class="after_meta_links">
 		    <a class="anchor_link" targets="product-specifications" href="#"><i class="fa-solid fa-arrow-right-long"></i> Specifications</a>
+        {% if product.metafields.custom.video_tasting_note != blank %}
+          <a data-fancybox data-src="#tasting_note_video" href="javascript:;"><i class="fa-solid fa-arrow-right-long"></i> Video</a>
+        {% endif %}
 		</div>
     {% endif %}
     </div>
@@ -55,63 +58,77 @@
     product.metafields.custom.aroma or product.metafields.custom.wine_vintage or product.metafields.custom.palate or product.metafields.custom.best_drinking or product.metafields.custom.colour or product.metafields.custom.alcohol %}
     <div id="product-specifications">
         <div class="product-specifications-inner">
+          <h3 class="specs_header">Specifications</h3>
             {% if product.metafields.custom.region %}
-                <div class="meta-item">
+
+              <a href="#" class="collapse_specs" target="region">Region</a>
+                <div id="region" class="meta-item">
                     <p class="specs_title">Region</p> <p class="specs_details">{{ product.metafields.custom.region }}</p>
                 </div>
             {% endif %}
             {% if product.metafields.custom.winemaking %}
-                <div class="meta-item">
+                <a href="#" class="collapse_specs" target="winemaking">Winemaking</a>
+                <div id="winemaking" class="meta-item">
                     <p class="specs_title">Winemaking</p> <p class="specs_details">{{ product.metafields.custom.winemaking }}</p>
                 </div>
             {% endif %}
             {% if product.metafields.custom.winemaker %}
-                <div class="meta-item">
+                <a href="#" class="collapse_specs" target="winemaker">Winemaker</a>
+                <div id="winemaker" class="meta-item">
                     <p class="specs_title">Winemaker</p> <p class="specs_details">{{ product.metafields.custom.winemaker }}</p>
                 </div>
             {% endif %}
             {% if product.metafields.custom.history %}
-                <div class="meta-item">
+                <a href="#" class="collapse_specs" target="history">History</a>
+                <div id="history" class="meta-item">
                     <p class="specs_title">History</p> <p class="specs_details">{{ product.metafields.custom.history }}</p>
                 </div>
             {% endif %}
             {% if product.metafields.custom.production %}
-                <div class="meta-item">
+                <a href="#" class="collapse_specs" target="production">Production</a>
+                <div id="production" class="meta-item">
                     <p class="specs_title">Production</p> <p class="specs_details">{{ product.metafields.custom.production }}</p>
                 </div>
             {% endif %}
             {% if product.metafields.custom.grape_variety %}
-                <div class="meta-item">
+                <a href="#" class="collapse_specs" target="grape_variety">Grape Variety</a>
+                <div id="grape_variety" class="meta-item">
                     <p class="specs_title">Grape Variety</p> <p class="specs_details">{{ product.metafields.custom.grape_variety }}</p>
                 </div>
             {% endif %}
             {% if product.metafields.custom.aroma %}
-                <div class="meta-item">
+                <a href="#" class="collapse_specs" target="aroma">Aroma</a>
+                <div id="aroma" class="meta-item">
                     <p class="specs_title">Aroma</p> <p class="specs_details">{{ product.metafields.custom.aroma }}</p>
                 </div>
             {% endif %}
             {% if product.metafields.custom.wine_vintage %}
-                <div class="meta-item">
+                <a href="#" class="collapse_specs" target="wine_vintage">Wine Vintage</a>
+                <div id="wine_vintage" class="meta-item">
                     <p class="specs_title">Wine Vintage</p> <p class="specs_details">{{ product.metafields.custom.wine_vintage }}</p>
                 </div>
             {% endif %}
             {% if product.metafields.custom.palate %}
-                <div class="meta-item">
+                <a href="#" class="collapse_specs" target="palate">Palate</a>
+                <div id="palate" class="meta-item">
                     <p class="specs_title">Palate</p> <p class="specs_details">{{ product.metafields.custom.palate }}</p>
                 </div>
             {% endif %}
             {% if product.metafields.custom.best_drinking %}
-                <div class="meta-item">
+                <a href="#" class="collapse_specs" target="best_drinking">Best Drinking</a>
+                <div id="best_drinking" class="meta-item">
                     <p class="specs_title">Best Drinking</p> <p class="specs_details">{{ product.metafields.custom.best_drinking }}</p>
                 </div>
             {% endif %}
             {% if product.metafields.custom.colour %}
-                <div class="meta-item">
+                <a href="#" class="collapse_specs" target="colour">Colour</a>
+                <div id="colour" class="meta-item">
                     <p class="specs_title">Colour</p> <p class="specs_details">{{ product.metafields.custom.colour }}</p>
                 </div>
             {% endif %}
             {% if product.metafields.custom.alcohol %}
-                <div class="meta-item">
+                <a href="#" class="collapse_specs" target="alcohol">Alcohol</a>
+                <div id="alcohol" class="meta-item">
                     <p class="specs_title">Alcohol</p> <p class="specs_details">{{ product.metafields.custom.alcohol }}</p>
                 </div>
             {% endif %}
@@ -121,6 +138,14 @@
 {% if product.metafields.custom.product_big_image %}
     <div class="big-image" style="background-image: url('{{ product.metafields.custom.product_big_image | img_url: 'original' }}');">
     </div>
+{% endif %}
+
+{% if product.metafields.custom.video_tasting_note != blank %}
+<div id="tasting_note_video" style="display: none;">
+  <div class='embed-container'>
+    <iframe src="{{ product.metafields.custom.video_tasting_note }}" frameborder='0' allowfullscreen></iframe>
+  </div>
+</div>
 {% endif %}
 
 <script>

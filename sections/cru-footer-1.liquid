@@ -14,22 +14,22 @@
 <div class="col-full columns_{{col_numbers}}" style='background-color: {{ section.settings.bg_color }}'>
     {% if section.settings.show_col_1 %}
         <div class="col-1 footer-column">
-            {{ section.settings.col1_content }}
+            {{ section.settings.col1_content | raw }}
         </div>
     {% endif %}
     {% if section.settings.show_col_2 %}
         <div class="col-2 footer-column">
-            {{ section.settings.col2_content }}
+            {{ section.settings.col2_content | raw }}
         </div>
     {% endif %}
     {% if section.settings.show_col_3 %}
         <div class="col-3 footer-column">
-            {{ section.settings.col3_content }}
+            {{ section.settings.col3_content | raw }}
         </div>
     {% endif %}
     {% if section.settings.show_col_4 %}
         <div class="col-4 footer-column">
-            {{ section.settings.col4_content }}
+            {{ section.settings.col4_content | raw }}
         </div>
     {% endif %}
 </div>
@@ -59,7 +59,7 @@
             "default": true
         },
          {
-            "type": "textarea",
+            "type": "html",
             "id": "col1_content",
             "label": "Column 1 Content"
         },
@@ -70,7 +70,7 @@
             "default": false
         },
         {
-            "type": "textarea",
+            "type": "html",
             "id": "col2_content",
             "label": "Column 2 Content"
         },
@@ -81,7 +81,7 @@
             "default": false
         },
         {
-            "type": "textarea",
+            "type": "html",
             "id": "col3_content",
             "label": "Column 3 Content"
         },
@@ -92,7 +92,7 @@
             "default": false
         },
         {
-            "type": "textarea",
+            "type": "html",
             "id": "col4_content",
             "label": "Column 4 Content"
         },

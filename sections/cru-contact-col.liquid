@@ -37,7 +37,14 @@
                 <input type="email" name="contact[email]" id="email" placeholder="{{ section.settings.email_placeholder }}" />
                 </div>
             {% endif %}
-
+            {% if section.settings.show_phone %}
+                <div class="phone">
+                {% if section.settings.show_phone_label %}
+                    <label for="phone">Phone</label>
+                {% endif %}
+                <input type="tel" name="contact[phone]" id="phone" placeholder="{{ section.settings.phone_placeholder }}" />
+                </div>
+            {% endif %}
             {% if section.settings.show_message %}
                 <div class="message">
                 {% if section.settings.show_message_label %}
@@ -52,7 +59,7 @@
             </div>
         {% endform %}
     </div>
-    <div class="image_column" style="background: url('{{ section.settings.right_background_image | img_url: 'large' }}') no-repeat center center; background-size: cover;">
+    <div class="image_column" style="background: url('{{ section.settings.right_background_image | img_url: 'original' }}') no-repeat center center; background-size: cover;">
     </div>
 </div>
 
@@ -124,6 +131,18 @@
       "id": "show_email",
       "label": "Show Email Field",
       "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_phone",
+      "label": "Show Phone Field",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "phone_placeholder",
+      "label": "Phone Placeholder",
+      "default": "Enter your phone number"
     },
     {
         "type": "text",

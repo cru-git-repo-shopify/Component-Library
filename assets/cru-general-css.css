@@ -1,3 +1,23 @@
+@font-face {
+    font-family: "FuturaPTDemi";
+    src: url("FuturaPTDemi.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "FuturaStdMedium";
+    src: url("FuturaStdMedium.woff2") format("woff2");
+}
+
+* {
+    font-family: "FuturaStdMedium";
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #5F412D;
+}
+
 .product-block {
     padding-left: 5%;
 }
@@ -39,6 +59,276 @@ main#MainContent {
     padding: 0;
 }
 
+section#shopify-section-template--17714455576655__custom_liquid_48ERXi {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+}
+
+section#shopify-section-template--17714455576655__17563596101f7194f5 {
+    width: 75%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+
+.gfa-content__text.text-hhWBsDtEVpLP {
+    display: none;
+}
+
+.follow_us h2 {
+    margin-top: 0;
+    border-bottom: 7px dotted;
+    width: fit-content;
+    font-size: 45px;
+    color: #5f412d;
+    line-height: 60px;
+    font-weight: 300;
+    font-family: 'FuturaStdMedium';
+}
+
+.footer_social_links i.fa-brands.fa-facebook-f {
+    border-radius: 50px;
+    background-color: #5f412d;
+    color: #fff;
+    font-size: 24px;
+    padding: 12px 17px;
+}
+
+.footer_social_links i.fa-brands.fa-instagram {
+    padding: 12px 13px;
+    border-radius: 50px;
+    background-color: #5f412d;
+    color: #fff;
+    font-size: 24px;
+}
+
+.footer_social_links a {
+    margin-right: 10px;
+}
+
+.stack.intro-text {
+    /* max-width: 800px; */
+    /* width: 90%; */
+    /* margin: 0 auto; */
+    /* text-align: center; */
+    padding: 115px 0;
+    background-color: #F9F7EF;
+}
+
+.block-video {margin-top: 15px!important;}
+
+.block-video iframe {
+    aspect-ratio: 16/9;
+}
+
+.stack.intro-text .block-richtext {font-size: 24px;line-height: 32px;width: 100%;color: #5f412d;}
+
+.stack.intro-text * {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.block-text.section_heading {
+    font-size: 16px;
+    margin-bottom: 24px;
+    color: #5f412d;
+}
+
+.stack.section_head {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 0;
+    padding: 100px 0 100px;
+    background-color: #F9F7EF;
+}
+
+.section_head .section_heading p {
+    font-size: 45px;
+    color: #5f412d;
+    line-height: 60px;
+    border-bottom: 5px dotted;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.bold_text p {
+    font-size: 24px;
+    line-height: 32px;
+    width: 100%!important;
+    margin: 0!important;
+}
+
+.scroll_links {
+    margin-top: 50px!important;
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100% !important;
+}
+
+a.scroll_to {
+    cursor: pointer;
+    font-size: 24px;
+    width: fit-content!important;
+    text-decoration: underline;
+    color: #5F412D;
+}
+
+a.scroll_to:hover {
+    text-decoration: none;
+}
+
+.cart-container.container {
+    padding-top: 175px !important;
+    padding-bottom: 100px !important;
+}
+
+input#get-rates-submit, button#cart-checkout, a.button.button-2.button-continue:hover {
+    background-color: #5f412d;
+    border-color: #5f412d;
+    font-family: 'FuturaStdMedium';
+    color: #fff;
+}
+
+input#get-rates-submit:hover, button#cart-checkout:hover, a.button.button-2.button-continue {
+    color: #5f412d;
+    background-color: transparent;
+    width: 100%;
+    border-color: #5f412d;
+    font-family: 'FuturaStdMedium';
+}
+
+input[type=checkbox]:checked+.form-label--checkbox:before {
+    background-color: #5f412d;
+    border-color: #5f412d;
+}
+
+h1.page-header.text-left {
+    font-family: 'FuturaStdMedium';
+    font-size: 24px;
+}
+
+.article-header {
+    max-width: 840px;
+    padding-top: 234px;
+    margin: 0 auto 100px!important;
+    width: 90%;
+}
+
+h3.title {
+    border-bottom: 4px dotted;
+    padding-bottom: 25px;
+    text-align: center;
+    width: fit-content!important;
+    margin: 0 auto;
+    font-size: 60px!important;
+    font-family: FuturaStdMedium!important;
+    font-weight: 400!important;
+    line-height: 1;
+    letter-spacing: -1px;
+    text-transform: unset!important;
+}
+
+.article-content h3 {
+    font-size: 1.618em;
+    font-family: FuturaStdMedium!important;
+    line-height: 1.618;
+}
+
+.article-body h2 {
+    font-size: 45px;
+    color: #5f412d;
+    line-height: 60px;
+    font-family: FuturaStdMedium;
+    font-weight: 300;
+}
+
+.halo-article-content .halo-text-format ul li {
+    font-size: 16px !important;
+    color: #5f412d !important;
+}
+
+.halo-article-content h4 {
+    font-size: 20px;
+    font-family: FuturaStdMedium!important;
+}
+
+.article-body iframe {
+    width: 100%;
+    margin: 0 auto!important;
+}
+
+.article-body figure {
+    width: 100%;
+    margin: 0;
+}
+
+.article-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.halo-article-content p {
+    margin-bottom: 0 !important;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 0!important;
+}
+.halo-article-content h3, .halo-article-content h2, .halo-article-content h1 {
+    width: 100%;
+    margin-top: 0!important;
+    line-height: 1.214;
+}
+
+.article-body {
+    max-width: 834px;
+    margin: 0 auto !important;
+    width: 90%;
+}
+
+.article-body img {
+    height: auto;
+    margin: 0 auto;
+}
+
+a.element-button {
+    background: transparent;
+    border: 1px solid;
+    text-decoration: none!important;
+    padding: 10px 15px;
+    transition: all 0.3s ease!important;
+}
+
+a.element-button:hover {
+    color: #fff;
+    background-color: #5f412d;
+}
+
+@media only screen and (max-width: 900px){
+    section#shopify-section-template--17714455576655__custom_liquid_48ERXi {
+        width: 100%;
+    }
+
+    section#shopify-section-template--17714455576655__17563596101f7194f5 {
+        width: calc(100% - 20px);
+        margin: 20px auto!important;
+        display: block;
+    }
+
+    .gfa-widget.GSC-BeoaPGDtLCKSmbY {
+        padding: 0!important;
+    }
+}
+
 @media only screen and (max-width: 781px) {
    .content-box.content-box--absolute.content-box--left.text-left.align-items--center {
         position: relative;
@@ -49,5 +339,12 @@ main#MainContent {
         width: 100%!important;
         background-color: #000!important;
         padding: 30px 5% 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    a.scroll_to {
+        width: 100%!important;
+        font-size: 20px;
     }
 }

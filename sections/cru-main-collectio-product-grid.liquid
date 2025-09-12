@@ -1,7 +1,7 @@
 {% assign all_tags = collections.all.all_tags %}
 
 <div class="shop_filter" style="padding-bottom: 50px;">
-  <h2 class="filter-title">Filter by Category:</h2>
+  <h2 class="filter-title">Filter by <i class="fa-solid fa-sliders"></i> <span>Category:</span></h2>
   <ul>
     <li><a class="term-item active" href="*">All Products</a></li>
       {% for tag in all_tags %}
@@ -21,10 +21,18 @@
 {% paginate collections.all.products by section.settings.products_per_page %}
 <div class="cru-product-collection">
     {% for product in collections.all.products %}
-        <div class="cru-product-item {% for tag in product.tags %}product_cat-{{ tag | handle }} {% endfor %}">
+        <div class="cru-product-item {% for tag in product.tags %}product_cat-{{ tag | handle }} {% endfor %}" style="background-color: {{ product.metafields.custom.product_background_color }};">
           {% assign points = product.metafields.custom.award_points %}
           {% assign badges = product.metafields.custom.award_badge %}
           {%  assign index = 0 %}
+          {% if product.metafields.custom.label != blank %}
+            {%  if product.metafields.custom.special_label %}
+              {%  assign label_type =  'special' %}
+            {% else %}
+              {%  assign label_type =  'normal' %}
+            {% endif %}
+            <div class="product-custom-label orange {{ label_type }}"><p>{{ product.metafields.custom.label }}</p></div>
+          {% endif %}
           {% if points != blank or badges != blank %}
             <div class="product_awards">
               {% if points != blank %}
@@ -49,6 +57,7 @@
                 {% if product.available %}
                     <div class="ajax-add-to-cart" data-variant-id="{{ product.variants.first.id }}">
                         <div class="quantity-wrapper">
+                          <div class="quantity-wrapper-inner">
                             <button type="button" class="qty-btn minus">−</button>
                             <input
                                 type="number"
@@ -58,6 +67,7 @@
                                 class="quantity-input"
                             >
                             <button type="button" class="qty-btn plus">+</button>
+                          </div>
                         </div>
                         <div class="add-to-cart-wrapper">
                             <button class="add-to-cart-button">Add to Cart</button>
@@ -85,129 +95,7 @@
 {% endpaginate %}
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('.ajax-add-to-cart').forEach(function (container) {
-    const button = container.querySelector('.add-to-cart-button');
-    const quantityInput = container.querySelector('.quantity-input');
-    const plusBtn = container.querySelector('.qty-btn.plus');
-    const minusBtn = container.querySelector('.qty-btn.minus');
-    const statusSpan = container.querySelector('.add-status');
-    const variantId = container.dataset.variantId;
 
-    // Quantity increment/decrement logic
-    plusBtn.addEventListener('click', () => {
-      quantityInput.value = parseInt(quantityInput.value || 1) + 1;
-    });
-
-    minusBtn.addEventListener('click', () => {
-      const current = parseInt(quantityInput.value || 1);
-      if (current > 1) quantityInput.value = current - 1;
-    });
-
-    // Add to cart AJAX logic
-    button.addEventListener('click', function (e) {
-      e.preventDefault();
-      const quantity = parseInt(quantityInput.value, 10);
-
-      fetch('/cart/add.js', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-          id: variantId,
-          quantity: quantity
-        })
-      })
-      .then(res => res.json())
-      .then(data => {
-        updateCart();
-        openCart(); // Open the cart sidebar
-        // statusSpan.textContent = "Added!";
-        // statusSpan.style.color = "green";
-        // setTimeout(() => statusSpan.textContent = '', 2000);
-      })
-      .catch(err => {
-        // statusSpan.textContent = "Error adding to cart";
-        // statusSpan.style.color = "red";
-      });
-    });
-  });
-
-  // Update Cart Function
-    function updateCart() {
-      fetch('/cart.js')
-        .then(res => res.json())
-        .then(cart => {
-          const itemsContainer = document.getElementById('ajax-cart-items');
-          const subtotal = document.getElementById('ajax-cart-subtotal');
-          itemsContainer.innerHTML = '';
-
-          if (cart.items.length === 0) {
-            itemsContainer.innerHTML = '<p class="text-gray-500">Your cart is empty.</p>';
-          } else {
-            cart.items.forEach((item, index) => {
-              itemsContainer.innerHTML += `
-                <div class="flex items-start side-cart-item">
-                  <img src="${item.image}" alt="${item.title}" class="w-16 h-16 object-cover border rounded">
-                  <div class="cart-item-details">
-                    <div class="font-semibold cart-item-title">${item.product_title}</div>
-                    <div class="text-sm text-gray-500">Qty: ${item.quantity}</div>
-                    <div>${Shopify.formatMoney(item.line_price)}</div>
-                  </div>
-                  <button 
-                    class="text-red-500 hover:text-red-700 text-sm remove-cart-item"
-                    data-line="${index + 1}"
-                    title="Remove"
-                  >✕</button>
-                </div>
-              `;
-            });
-          }
-
-          subtotal.textContent = Shopify.formatMoney(cart.total_price);
-
-          // Bind remove buttons
-          document.querySelectorAll('.remove-cart-item').forEach(button => {
-            button.addEventListener('click', function () {
-              const line = this.getAttribute('data-line');
-
-              fetch('/cart/change.js', {
-                method: 'POST',
-                headers: {
-                  'Content-Type': 'application/json',
-                  'Accept': 'application/json'
-                },
-                body: JSON.stringify({
-                  line: parseInt(line),
-                  quantity: 0
-                })
-              })
-              .then(res => res.json())
-              .then(data => {
-                updateCart();
-              });
-            });
-          });
-        });
-    }
-    
-
-    function openCart() {
-      const cartSidebar = document.getElementById('ajax-cart-sidebar');
-      const overlay = document.getElementById('cart-overlay');
-      cartSidebar.classList.remove('hidden');
-      overlay.classList.remove('hidden');
-    }
-
-    if (typeof Shopify === 'undefined') {
-      var Shopify = {};
-    }
-    Shopify.formatMoney = function(cents) {
-      return '$' + (cents / 100).toFixed(2);
-    }
-});
 
 </script>
 

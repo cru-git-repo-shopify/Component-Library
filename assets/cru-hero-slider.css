@@ -7,35 +7,37 @@
 
 .hero_txt_content {
     position: absolute;
-    bottom: 25%;
-    left: 5%;
+    top: 20%;
+    left: 50%;
     text-align: left;
     width: fit-content;
     max-width: 650px;
-    z-index: 9999
+    z-index: 9999;
+    transform: translateX(-50%);
 }
 
-.hero_heading {
-    font-size: 49px;
+.hero_heading, .hero_heading * {
+    font-size: 60px;
     text-align: left;
-    color: #fff;
+    color: #5f412d;
     font-weight: 300;
     margin-bottom: 24px;
-    line-height: 80px;
     padding: 0;
     position: relative;
     z-index: 1;
-    font-family: Inter-thin
+    font-family: FuturaStdMedium;
+    text-align: center;
+    line-height: 80px;
 }
 
-.hero_heading:after {
+/* .hero_heading:after {
     content: '';
     width: 95px;
     display: block;
     height: 1px;
     background-color: #fff;
     margin-top: 24px
-}
+} */
 
 p.hero_sub_heading {
     font-size: 15px;
@@ -48,7 +50,7 @@ p.hero_sub_heading {
 
 .wht_btn,.white_btn a.gb-button {
     font-size: 15px;
-    font-family: Lora serif;
+    font-family: "FuturaStdMedium";
     border: 2px solid #fff;
     font-weight: 400;
     display: inline-block;
@@ -71,7 +73,7 @@ a.hero_slider_next {
     display: inline-block;
     vertical-align: middle;
     z-index: 999;
-    font-family: Inter-light
+    font-family: "FuturaStdMedium";
 }
 
 a.hero_slider_next:before {
@@ -101,7 +103,7 @@ a.hero_slider_prev {
     display: inline-block;
     vertical-align: middle;
     z-index: 999;
-    font-family: Inter-light
+    font-family: "FuturaStdMedium";
 }
 
 a.hero_slider_prev:before {
@@ -126,6 +128,19 @@ a.hero_slider_prev:before {
     margin-bottom: 0;
 }
 
+.hero_content:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(14, 15, 11, 0) 50%, rgba(15, 16, 12, 0.8) 100%);
+}
+
+.hero_heading p {
+    color: inherit;
+}
+
 @media only screen and (max-width: 781px){
     .hero_txt_content {
         display: none
@@ -144,12 +159,20 @@ a.hero_slider_prev:before {
         background-position: center
     }
 
+    .hero_txt_content_mobile .hero_heading {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
     .hero_txt_content_mobile {
-        display: block!important;
-        background-color: #231f20;
-        padding: 40px 0;
-        padding-left: 5%;
-        padding-right: 5%
+        display: block !important;
+        /* background-color: #231f20; */
+        padding: 40px 5%;
+        position: absolute;
+        top: 33%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
     }
 
     a.hero_slider_next,a.hero_slider_prev {

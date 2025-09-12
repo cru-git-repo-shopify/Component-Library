@@ -119,11 +119,20 @@
          {{ 'cru-main-collection-product-grid.css' | asset_url | stylesheet_tag }}
          {{ 'cru-single-product.css' | asset_url | stylesheet_tag }}
          {{ 'cru-side-cart.css' | asset_url | stylesheet_tag }}
+         {{ 'cru-product-slider.css' | asset_url | stylesheet_tag }}
+         {{ 'cru-related-products.css' | asset_url | stylesheet_tag }}
+         {{ 'cru-ot-wc-section.css' | asset_url | stylesheet_tag }}
          {{ 'cru-single-product.js' | asset_url | script_tag }}
+         {{ 'cru-experience.css' | asset_url | stylesheet_tag }}
+         {{ 'cru-experience.js' | asset_url | script_tag }}
          {{ 'cru-main-collection-product-grid.js' | asset_url | script_tag }}
          {{ 'cru-header.js' | asset_url | script_tag }}
+         {{ 'cru-footer.js' | asset_url | script_tag }}
          {{ 'cru-hero-slider.js' | asset_url | script_tag }}
          {{ 'cru-reviews.js' | asset_url | script_tag }}
+         {{ 'cru-add-to-cart.js' | asset_url | script_tag }}
+         {{ 'cru-cta-grid.js' | asset_url | script_tag }}
+         {{ 'cru-general-js.js' | asset_url | script_tag }}
 
          {{ 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css' | stylesheet_tag }}
          {{ 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css' | stylesheet_tag }}
@@ -133,6 +142,8 @@
         <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 
     <body class="template-{{ request.page_type }} {{layout_body}} {{style_dots}} {{style_text_size_varriant}} {{style_arrows}} {{product_card_layout}} {% if settings.enable_button_disable_arrows %} enable_button_disable_arrows{% endif %}{% if settings.display_text_color_title %} enable_text_color_title{% if settings.style_text_color_varriant == '02' %} style_2_text_color_varriant{% endif %}{% endif %}{% if settings.hide_compare_homepage %} hide_compare_homepage{% endif %} {{ quick_shop_type }}{% if settings.show_image_loading %} show_image_loading{% endif %}{% if settings.show_effect_close %} show_effect_close{% endif %}{% if settings.enable_layout_rtl and enable_iso_rtl %} layout_rtl{% endif %}{% if request.design_mode %} shopify-design-mode{% endif %}{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}{% if settings.enable_following_cursor and settings.following_cursor_style == 'default' %} cursor-fixed__show{% endif %}{% unless settings.enable_currencies %} disable_currencies{% endunless %}{% if settings.enable_button_1_border_outside %} btn_1_br_outside{% endif %}{% if settings.enable_button_2_border_outside %} btn_2_br_outside{% endif %}{% if settings.enable_button_3_border_outside %} btn_3_br_outside{% endif %}{% if settings.show_price_percent %} show_price_percent{% endif %}{% if settings.show_wishlist_full_icon %} icon_wishlist_full{% endif %}{% if settings.discount_calculator_free_shipping == 'setup_shipping_delivery' %} setup_shipping_delivery{% endif %}" allow-transparency>

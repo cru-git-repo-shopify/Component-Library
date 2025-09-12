@@ -1,0 +1,458 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "cru_hero_slider_yH7cjc": {
+      "type": "cru-hero-slider",
+      "blocks": {
+        "slide_VRfcwB": {
+          "type": "slide",
+          "settings": {
+            "bg_image": "shopify://shop_images/our-story.jpg",
+            "y_alignment": "custom",
+            "custom_y_alignment": 15,
+            "x_alignment": "center",
+            "mobile_y_alignment": "center",
+            "mobile_x_alignment": "custom",
+            "mobile_custom_x_alignment": 85,
+            "allow_overlay": false,
+            "overlay_color": "",
+            "hero_heading": "<p>OUR STORY</p>",
+            "heading_color": "",
+            "hero_subheading": "",
+            "hero_button": "",
+            "hero_btn_link": "",
+            "has_nxt_btn": false,
+            "nxt_btn_txt": "",
+            "has_prev_btn": false,
+            "prev_btn_txt": "",
+            "header_type": "dark"
+          }
+        }
+      },
+      "block_order": [
+        "slide_VRfcwB"
+      ],
+      "name": "CRU Hero Slider",
+      "settings": {}
+    },
+    "cru_stack_qU6yQq": {
+      "type": "cru-stack",
+      "blocks": {
+        "text_AGmm6L": {
+          "type": "text",
+          "settings": {
+            "text": "OUR STORY",
+            "id": "",
+            "class": "section_heading"
+          }
+        },
+        "richtext_6L8BQG": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Six generations of stubborn, competitive growers and one equally spirited winemaker – that’s the Oliver family.<br/><br/>Living smack bang in the middle of McLaren Vale, the family flourish on producing perfect parcels of fruit on their 100 hectare ‘Taranga’ property.<br/><br/>Their collection of small batch, handcrafted, Oliver’s Taranga wines speak of both the variety and vintage, capturing a time and place, while continuing to document the family’s ongoing 185 year relationship with the land.</p>",
+            "id": "",
+            "class": ""
+          }
+        },
+        "video_W64nFm": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=UhQ7ahTgCxU",
+            "id": "",
+            "class": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_AGmm6L",
+        "richtext_6L8BQG",
+        "video_W64nFm"
+      ],
+      "name": "CRU Stack",
+      "settings": {
+        "id": "",
+        "class": "intro-text"
+      }
+    },
+    "cru_2_col_tkaGcg": {
+      "type": "cru-2-col",
+      "blocks": {
+        "text_column_fejMRN": {
+          "type": "text_column",
+          "settings": {
+            "heading": "FIRST GENERATION",
+            "column_content": "<p>Exactly why William Oliver, his wife Elizabeth and their two children left their home in the Scottish border town of Samieston and set sail for the distant shores of South Australia is a mystery. Their destination was a fledgling colony, with an immigrant population of less than 15-thousand and the journey to get there was a treacherous one. But William Oliver was not a man to be deterred by difficulties.<br/><br/>So determined was he to start a new life that on the 2nd of October 1839, he bought an ‘unseen’ parcel of land in this foreign place and days later hustled his family aboard the 360 tonne sailing ship ‘The Delhi’ bound for South Australia.<br/><br/>What is remarkable is what the Olivers did when they landed in this strange new land in December 1839. In amidst producing ten children and setting up a mixed farm with no infrastructure, William Oliver decided to plant wine grapes. Exactly why he strayed from the traditional mix of stock and orchards is another mystery. Perhaps he enjoyed a tipple himself, or maybe the Olivers were true entrepreneurs, seeing opportunity where others saw difficulty. He named the farms ‘Whitehill’ and ‘Taranga’, and both properties are still proudly in family hands.<br/><br/>When William died at the ripe old age of 76, he was buried beside Elizabeth in a marble crypt in the family cemetery on the northern edge of the Taranga McLaren Vale property. He left behind seven children (three were to die young from infectious diseases), 18 horses, 38 head of cattle, 400 ‘fat sheep’, three pigs, poultry, wagons ploughs and a seed sower. Most importantly perhaps, his estate included four thousand gallons of ‘good wine’, and around 3000 acres, which was shared amongst his children.</p>",
+            "show_button": false,
+            "button_link": "https://example.com",
+            "button_text": "Learn More"
+          }
+        },
+        "image_column_tRXy6i": {
+          "type": "image_column",
+          "settings": {
+            "type": "single",
+            "image_1": "shopify://shop_images/OT_Generations_WebGraphics-01-1080.jpg",
+            "image_alt": "Image"
+          }
+        }
+      },
+      "block_order": [
+        "text_column_fejMRN",
+        "image_column_tRXy6i"
+      ],
+      "name": "CRU 2 Column",
+      "settings": {
+        "class": "",
+        "id": "",
+        "is_reversed": true
+      }
+    },
+    "cru_2_col_wHnJTN": {
+      "type": "cru-2-col",
+      "blocks": {
+        "text_column_e9HHVf": {
+          "type": "text_column",
+          "settings": {
+            "heading": "SECOND GENERATION",
+            "column_content": "<p>William and Elizabeth’s ninth child Archibald inherited 800 acres of the family property, but it was Archibald’s wife Ruth that kept the family business in health while Archibald and his brothers led a more scurrilous lifestyle.</p><p>Archibald’s older brothers liked a drink, a smoke and a bet – rather than tending their father’s grape vines, most days they would be down at the local saloon enjoying a tipple or two. Famously, one day the boy’s father found them drinking & betting at the races when they should have been at work – so he banished them from the property, a story that inspired <a href=\"https://www.oliverstaranga.com/product/the-banished-fortified-grenache/\">‘The Banished’ Fortified Grenache</a>.</p><p>Thankfully Ruth’s efforts with the family business continued long after her husband had passed, with records showing grape payments in 1925 made by fellow long-standing McLaren Vale winery ‘Kay Brothers’ to ‘Mrs Oliver’.</p>",
+            "show_button": false,
+            "button_link": "https://example.com",
+            "button_text": "Learn More"
+          }
+        },
+        "image_column_RhbBqL": {
+          "type": "image_column",
+          "settings": {
+            "type": "single",
+            "image_1": "shopify://shop_images/OT_Generations_WebGraphics-02-1080.jpg",
+            "image_alt": "Image"
+          }
+        }
+      },
+      "block_order": [
+        "text_column_e9HHVf",
+        "image_column_RhbBqL"
+      ],
+      "name": "CRU 2 Column",
+      "settings": {
+        "class": "",
+        "id": "",
+        "is_reversed": false
+      }
+    },
+    "cru_2_col_wTRjca": {
+      "type": "cru-2-col",
+      "blocks": {
+        "text_column_CT9FKm": {
+          "type": "text_column",
+          "settings": {
+            "heading": "THIRD GENERATION",
+            "column_content": "<p>Ruth’s son RW (Robert William) Oliver would prove to be just the man to take Oliver’s Taranga well into the 20th Century. RW diversified the business – in addition to growing winegrapes and producing currants and raisins for the dried fruit market, he also began a merino stud, a clydesdale horse stud, a cattle stud, built a piggery and continued cropping some of the property with wheat and barley.</p><p>RW was just 28 years old in 1910 when his father passed away. The Australian pound would replace the British pound as Australia was granted the license to print currency that year; and the machinery revolution for farming was imminent. RW & Sons purchased the first tractor- a Farmall H model- for the Taranga property in 1944 and set about work to save the family business.</p><p>Robert & Kathleen lived in a house built by Robert, not far from his parents home on Taranga Farm, and raised 3 sons - HJ (Herbert John), Archibald and Keith. This is the house that Corrina now lives in.</p><p>Robert was a highly respected resident of McLaren Vale, holding various responsible positions in the district. He served as Councillor for the Noarlunga District Council, was secretary of the Southern Football association and a member of the McLaren Vale Institute Committee.</p><p>After only a few years RW’s grape growing savvy and business acumen had put Oliver’s on a pretty good wicket and he was able to enjoy his one consuming passion – sport – playing Aussie Rules, Bowls and Cricket for McLaren Vale. We remember him with the <a href=\"https://www.oliverstaranga.com/product/2022-rw-grenache/\">RW Grenache</a>.</p>",
+            "show_button": false,
+            "button_link": "https://example.com",
+            "button_text": "Learn More"
+          }
+        },
+        "image_column_PjW3zD": {
+          "type": "image_column",
+          "settings": {
+            "type": "single",
+            "image_1": "shopify://shop_images/OT_Generations_WebGraphics-03-1080.jpg",
+            "image_alt": "Image"
+          }
+        }
+      },
+      "block_order": [
+        "text_column_CT9FKm",
+        "image_column_PjW3zD"
+      ],
+      "name": "CRU 2 Column",
+      "settings": {
+        "class": "",
+        "id": "",
+        "is_reversed": true
+      }
+    },
+    "cru_2_col_3njEWx": {
+      "type": "cru-2-col",
+      "blocks": {
+        "text_column_XykWr7": {
+          "type": "text_column",
+          "settings": {
+            "heading": "FOURTH GENERATION",
+            "column_content": "<p>RW’s son Herbert inherited a bustling business when his father passed away in 1970, one he’d been working in for more than half of his life, before taking the reins at age 48. Herbert or ‘HJ’ as he was known, was the man who turned Oliver’s Taranga into a grape only business. He loved the grape and decided it would be the sole focus for Oliver’s Taranga. We have named our premium Shiraz the HJ Reserve in his memory.</p><p>HJ was quite the bachelor in the early 1940’s, wooing his love Marjorie at dance after dance in McLaren Vale and Adelaide. Marjorie’s ‘dance journal’ reveals details of these soirees “I had an extra dance with Bert (HJ) tonight” she writes. She goes onto write of the day HJ was called up to be a fighter pilot in WWII, wishing it weren’t so.</p><p>In 1948 with the help of the native aboriginal Kaurna people, the 1948 block was planted and just a few years later, HJ & Marjorie welcomed three children, Robyn, Donald & Morris. HJ also purchased cropping land in the South east of SA, near Kingston.</p><p>HJ also followed the family tradition of being an active sportsman- playing cricket, football, bowls and golf. Son Don & HJ shared a father/son 150 runs not out partnership in the 70’s, and were both named in the McLaren Vale Football Club’s team of the century.</p><p>Wife Marjorie, the matriarch of the Oliver family, also had a huge influence on her children and grandchildren. Well known for her loving, generous nature, and colourful knitted comfy woollen socks that the family all wear on site at Olivers Taranga Vineyards. She was a constant support to everyone who worked at Oliver’s Taranga, and is remembered fondly with our sparkling ‘The Hunt for Mrs Oliver’.</p>",
+            "show_button": false,
+            "button_link": "https://example.com",
+            "button_text": "Learn More"
+          }
+        },
+        "image_column_4nXcwX": {
+          "type": "image_column",
+          "settings": {
+            "type": "single",
+            "image_1": "shopify://shop_images/OT_Generations_WebGraphics-04-1080.jpg",
+            "image_alt": "Image"
+          }
+        }
+      },
+      "block_order": [
+        "text_column_XykWr7",
+        "image_column_4nXcwX"
+      ],
+      "name": "CRU 2 Column",
+      "settings": {
+        "class": "",
+        "id": "",
+        "is_reversed": false
+      }
+    },
+    "cru_2_col_zajLEk": {
+      "type": "cru-2-col",
+      "blocks": {
+        "text_column_zYhBbh": {
+          "type": "text_column",
+          "settings": {
+            "heading": "FIFTH GENERATION",
+            "column_content": "<p>After their father Bert passed away in 2003, son Don took over the running of the Taranga Vineyards and son Morris now runs the South East property.</p><p>There would be no other path for Don (DJ) Oliver. Not ever. For Don Oliver it has always been about the vines. Born in post-war country South Australia, as a young boy Don would ride the family’s Clydesdale bare back after school to help his father in the McLaren Vale vineyard.</p><p>Don studied the first Certificate of Agriculture at Urrbrae College and his continued viticultural work saw him receive the inaugural McLaren Vale Grape Growers Association “Viticulturalist of the Year” Award.</p><p>Father to daughter Brioni, who now jointly runs the Oliver’s Taranga business with her cousins, Don still relies on good old gut-instinct, and that only comes with a lifelong knowledge of the land and a love of wine that runs through his veins. However Don has also been helping Oliver’s Taranga embrace the high-tech world of computerised soil monitoring systems and state-of-the-art irrigation technology.</p><p>Don has also helped oversee the varietal mix change over the years in the vineyard. The Shiraz, Grenache and Mataro are still grown, but now Oliver’s Taranga have pioneered emerging varieties like Fiano, Vermentino, Tempranillo, Sagrantino & Mencia in the region.</p>",
+            "show_button": false,
+            "button_link": "https://example.com",
+            "button_text": "Learn More"
+          }
+        },
+        "image_column_C8gB9t": {
+          "type": "image_column",
+          "settings": {
+            "type": "single",
+            "image_1": "shopify://shop_images/OT_Generations_WebGraphics-05-1080.jpg",
+            "image_alt": "Image"
+          }
+        }
+      },
+      "block_order": [
+        "text_column_zYhBbh",
+        "image_column_C8gB9t"
+      ],
+      "name": "CRU 2 Column",
+      "settings": {
+        "class": "",
+        "id": "",
+        "is_reversed": true
+      }
+    },
+    "cru_2_col_zWYG6W": {
+      "type": "cru-2-col",
+      "blocks": {
+        "text_column_GAPeaf": {
+          "type": "text_column",
+          "settings": {
+            "heading": "SIXTH GENERATION",
+            "column_content": "<p>Six generations later, or arguably seven, given the enthusiasm of the kids in the family, the Oliver’s Taranga business is run by cousins Corrina Wright, Brioni Oliver and Sam Oliver.</p><p>Robyn Oliver’s daughter Corrina is the family’s first winemaker. Since convincing her family to give her some grapes to make the first Oliver’s Taranga wine in 1994, Corrina has been recognised as one of the best winemakers in Australia. Corrina is not only committed to the success of her own family business, she is determined to improve the entire industry as well.</p><p>A current board member of the Australian Wine Research Institute, Corrina is also a champion for women in the industry, from her position as a committee member on the WGA Diversity, Equality & Inclusion charter for the Australian Wine Industry. In addition, Corrina holds an advisory board position for the Australian Women in Wine Awards, and is an active participant in Family Business Australia, and was recognised by them as a Leading Woman in Business in 2022.</p><p>Corrina is also a champion of alternative varieties, including as President of the National Alternative Varieties Wine Show, and has been instrumental in adopting new and more climatically suited grape varieties in the region. She is proud to have been the driving force behind Oliver’s Taranga being the first vineyard in South Australia to plant varieties such as Sagrantino, Mencia, Falanghina, and one of the first to plant Fiano.</p><p>Together with cousin, and close friend, Brioni, the two girls forged an entirely new path for the multi-generational grape business.  </p><p>Since then, Brioni and Corrina converted the heritage listed worker’s cottage on the property to become a Cellar Door in 2005, and from there the business has continued to mature and grow.</p><p>In 2019, Morris’ son Sam also joined the family business, bringing big business finance experience into the fold. Sam helped the Oliver’s Taranga business apply for, and be granted a State Government grant to redevelop the Cellar Door.</p><p>So in 2021, what began as a tiny, characterful Cellar Door has now been taken into a new era. A sensitively designed, modern extension has transformed the Oliver’s Taranga Cellar Door, recognised as one of McLaren Vale’s best Cellar Doors.</p><p>Despite these many advances, many things about the Olivers remain the same. The current generation of Olivers continue to hold strong William Oliver’s ideals of passion, integrity and continuous improvement. And they throw a good dash of respect for family, history and tradition into the mix. They are in a great position to help this generational family business well into the future.</p>",
+            "show_button": false,
+            "button_link": "https://example.com",
+            "button_text": "Learn More"
+          }
+        },
+        "image_column_hUDkmg": {
+          "type": "image_column",
+          "settings": {
+            "type": "single",
+            "image_1": "shopify://shop_images/OT_Generations_WebGraphics-06-1080.jpg",
+            "image_alt": "Image"
+          }
+        }
+      },
+      "block_order": [
+        "text_column_GAPeaf",
+        "image_column_hUDkmg"
+      ],
+      "name": "CRU 2 Column",
+      "settings": {
+        "class": "",
+        "id": "",
+        "is_reversed": false
+      }
+    },
+    "cru_stack_At4e8T": {
+      "type": "cru-stack",
+      "blocks": {
+        "text_Gd3tgR": {
+          "type": "text",
+          "settings": {
+            "text": "Our People",
+            "id": "",
+            "class": "section_heading"
+          }
+        }
+      },
+      "block_order": [
+        "text_Gd3tgR"
+      ],
+      "name": "CRU Stack",
+      "settings": {
+        "id": "",
+        "class": "section_head"
+      }
+    },
+    "cru_2_col_CAMWxR": {
+      "type": "cru-2-col",
+      "blocks": {
+        "text_column_VrDaFc": {
+          "type": "text_column",
+          "settings": {
+            "heading": "CORRINA WRIGHT",
+            "column_content": "<p>Corrina Wright has wine – and 185 years of family grape growing – flowing through her veins. Described by WBM Magazine as a “legend in the making” and by James Halliday as being part of a “remarkable dynasty” she’s treading a slightly different path among the vines that her forefathers planted, in the Seaview sub-region of McLaren Vale. Affectionately known as the Queen of Fiano for her passion and skill at making this signature alternative variety.<br/><br/></p>",
+            "show_button": false,
+            "button_link": "https://example.com",
+            "button_text": "Learn More"
+          }
+        },
+        "image_column_Y7zFC9": {
+          "type": "image_column",
+          "settings": {
+            "type": "single",
+            "image_1": "shopify://shop_images/Corringa-Wright.jpg",
+            "image_alt": "Corrina Wright"
+          }
+        }
+      },
+      "block_order": [
+        "text_column_VrDaFc",
+        "image_column_Y7zFC9"
+      ],
+      "name": "CRU 2 Column",
+      "settings": {
+        "class": "",
+        "id": "",
+        "is_reversed": true
+      }
+    },
+    "cru_2_col_MWCn66": {
+      "type": "cru-2-col",
+      "blocks": {
+        "text_column_CRqe6Y": {
+          "type": "text_column",
+          "settings": {
+            "heading": "BRIONI OLIVER",
+            "column_content": "<p><br/>Brioni, with cousin Corrina Wright, is the leading voice of the Oliver family’s sixth generation and the impetus behind their own wine label‐ Oliver’s Taranga. “I am just so proud to be a part of the 6th generation of Oliver’s in our special patch of McLaren Vale. I hope that my ancestors are proud of the wines we produce, and I look forward to bringing our wines and sharing our story to more and more people.”<br/><br/></p>",
+            "show_button": false,
+            "button_link": "https://example.com",
+            "button_text": "Learn More"
+          }
+        },
+        "image_column_NEn3be": {
+          "type": "image_column",
+          "settings": {
+            "type": "single",
+            "image_1": "shopify://shop_images/Brioni-Oliver.jpg",
+            "image_alt": "Brioni Oliver"
+          }
+        }
+      },
+      "block_order": [
+        "text_column_CRqe6Y",
+        "image_column_NEn3be"
+      ],
+      "name": "CRU 2 Column",
+      "settings": {
+        "class": "",
+        "id": "",
+        "is_reversed": false
+      }
+    },
+    "cru_2_col_LnTyxt": {
+      "type": "cru-2-col",
+      "blocks": {
+        "text_column_gbjrza": {
+          "type": "text_column",
+          "settings": {
+            "heading": "DON OLIVER",
+            "column_content": "<p>Don, a fifth generation Oliver, was born in McLaren Vale and has worked in the wine industry for most of his life developing the Taranga vineyard into what it is today. An avid supporter of the region, is one of McLaren Vales most respected grape growers and is known for his technical vineyard innovations, producing grapes to go into super premium and icon wines</p>",
+            "show_button": false,
+            "button_link": "https://example.com",
+            "button_text": "Learn More"
+          }
+        },
+        "image_column_YwRLgV": {
+          "type": "image_column",
+          "settings": {
+            "type": "single",
+            "image_1": "shopify://shop_images/Don-Oliver.jpg",
+            "image_alt": "Don Oliver"
+          }
+        }
+      },
+      "block_order": [
+        "text_column_gbjrza",
+        "image_column_YwRLgV"
+      ],
+      "name": "CRU 2 Column",
+      "settings": {
+        "class": "",
+        "id": "",
+        "is_reversed": true
+      }
+    },
+    "cru_2_col_xFrzR3": {
+      "type": "cru-2-col",
+      "blocks": {
+        "text_column_7hUJJq": {
+          "type": "text_column",
+          "settings": {
+            "heading": "SAM OLIVER",
+            "column_content": "<p>Sam joined the family business in 2019 after previous experience in engineering and management consulting. Sam initially joined to cover Brioni Oliver’s maternity leave but could not resist the challenge of contributing to the family dynasty. Growing up on the family’s sheep and cattle property Sam is looking forward to supporting the McLaren Vale division of vineyard and wines.</p>",
+            "show_button": false,
+            "button_link": "https://example.com",
+            "button_text": "Learn More"
+          }
+        },
+        "image_column_gAFJfq": {
+          "type": "image_column",
+          "settings": {
+            "type": "single",
+            "image_1": "shopify://shop_images/Sam-Oliver.jpg",
+            "image_alt": "Sam Oliver"
+          }
+        }
+      },
+      "block_order": [
+        "text_column_7hUJJq",
+        "image_column_gAFJfq"
+      ],
+      "name": "CRU 2 Column",
+      "settings": {
+        "class": "",
+        "id": "",
+        "is_reversed": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cru_hero_slider_yH7cjc",
+    "cru_stack_qU6yQq",
+    "cru_2_col_tkaGcg",
+    "cru_2_col_wHnJTN",
+    "cru_2_col_wTRjca",
+    "cru_2_col_3njEWx",
+    "cru_2_col_zajLEk",
+    "cru_2_col_zWYG6W",
+    "cru_stack_At4e8T",
+    "cru_2_col_CAMWxR",
+    "cru_2_col_MWCn66",
+    "cru_2_col_LnTyxt",
+    "cru_2_col_xFrzR3"
+  ]
+}

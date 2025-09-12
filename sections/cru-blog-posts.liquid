@@ -4,7 +4,11 @@
             <div class="article_feat_image" style="background-image: url('{{ article.image | image_url }}" alt="{{ article.title }}');"></div>
                 <div class="article_content">
                     <h2 class="article_title">{{ article.title }}</h2>
-                    <p class="shor_desc">{{ article.excerpt | strip_html }}</p>
+                    {% if article.excerpt != blank %}
+                        <p class="shor_desc">{{ article.excerpt | strip_html }}</p>
+                    {% else %}
+                        <p class="shor_desc">{{ article.content | strip_html | truncatewords: 50 }}</p>
+                    {% endif %}
                     <a class="article_link" href="{{ article.url }}">Read more</a>
                 </div>
         </article>

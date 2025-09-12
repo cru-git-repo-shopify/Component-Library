@@ -237,26 +237,14 @@
         "text_JrWDmU": {
           "type": "text",
           "settings": {
-            "text": "Cellar Door Store",
+            "text": "Our Wines",
             "id": "",
             "class": "page_title"
-          }
-        },
-        "custom_yqVnbh": {
-          "type": "custom",
-          "settings": {
-            "subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-            "section_id": "",
-            "section_class": "",
-            "has_button": true,
-            "button_text": "Mailing list signup",
-            "button_link": "/"
           }
         }
       },
       "block_order": [
-        "text_JrWDmU",
-        "custom_yqVnbh"
+        "text_JrWDmU"
       ],
       "name": "CRU Stack",
       "settings": {

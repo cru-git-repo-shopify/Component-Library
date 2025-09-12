@@ -5,4 +5,11 @@ jQuery(document).ready(function($) {
 	        scrollTop: jQuery('#'+target).offset().top - 150
 	    }, 500);
 	});
+	
+	jQuery('a.collapse_specs').on('click', function(e){
+	    e.preventDefault();
+	    var target = jQuery(this).attr('target');
+	    jQuery(this).toggleClass('active');
+	    jQuery('#'+target).toggle("slide", { direction: "up" }, 500);
+	});
 });

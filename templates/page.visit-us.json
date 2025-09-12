@@ -1,0 +1,148 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "cru_hero_slider_8U6nBx": {
+      "type": "cru-hero-slider",
+      "blocks": {
+        "slide_3id3br": {
+          "type": "slide",
+          "settings": {
+            "bg_image": "shopify://shop_images/Building_Photography-Jason-Porter-1.jpg",
+            "y_alignment": "center",
+            "x_alignment": "center",
+            "mobile_y_alignment": "center",
+            "mobile_x_alignment": "custom",
+            "mobile_custom_x_alignment": 75,
+            "allow_overlay": false,
+            "overlay_color": "rgba(0,0,0,0)",
+            "hero_heading": "<p>VISIT US</p>",
+            "heading_color": "#eee1c6",
+            "hero_subheading": "",
+            "hero_button": "",
+            "hero_btn_link": "",
+            "has_nxt_btn": false,
+            "nxt_btn_txt": "",
+            "has_prev_btn": false,
+            "prev_btn_txt": "",
+            "header_type": "light"
+          }
+        }
+      },
+      "block_order": [
+        "slide_3id3br"
+      ],
+      "name": "CRU Hero Slider",
+      "settings": {}
+    },
+    "cru_experience_GeQgL7": {
+      "type": "cru-experience",
+      "blocks": {
+        "block_AK7cPn": {
+          "type": "block",
+          "settings": {
+            "position": "top"
+          }
+        }
+      },
+      "block_order": [
+        "block_AK7cPn"
+      ],
+      "name": "CRU Experience",
+      "settings": {
+        "id": "",
+        "class": ""
+      }
+    },
+    "cru_stack_DhNxqJ": {
+      "type": "cru-stack",
+      "blocks": {
+        "text_DXijCq": {
+          "type": "text",
+          "settings": {
+            "text": "EVENTS",
+            "id": "",
+            "class": "section_heading"
+          }
+        },
+        "textarea_4jHyCF": {
+          "type": "textarea",
+          "settings": {
+            "textarea": "Book now for one of Oliver’s Taranga’s legendary parties, we always have a few great events up our sleeve! If you haven’t been to a Porchetta Party, you haven’t lived…",
+            "id": "",
+            "class": "section_head_description"
+          }
+        }
+      },
+      "block_order": [
+        "text_DXijCq",
+        "textarea_4jHyCF"
+      ],
+      "name": "CRU Stack",
+      "settings": {
+        "id": "",
+        "class": "section_head transparent"
+      }
+    },
+    "cru_experience_MaXKTD": {
+      "type": "cru-experience",
+      "blocks": {
+        "block_PqKgcV": {
+          "type": "block",
+          "settings": {
+            "position": "bottom"
+          }
+        }
+      },
+      "block_order": [
+        "block_PqKgcV"
+      ],
+      "name": "CRU Experience",
+      "settings": {
+        "id": "",
+        "class": ""
+      }
+    },
+    "cru_stack_VQR6gE": {
+      "type": "cru-stack",
+      "blocks": {
+        "richtext_wpzPFj": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<h2><br/>2025 EVENTS</h2><p>Sunday 21 September 2025 - <a href=\"https://bookings.nowbookit.com/?accountid=058619e4-aa29-4d43-b86a-d6fe089d1207&theme=light&accent=hex,263238&venueid=5125&date=2025-09-21&serviceids=event_RSCNVCBKG2RL8_1729125958280\">Grenache & Gourmet X Porchetta Party</a></p><p>Sunday 7 December 2025 - <a href=\"https://bookings.nowbookit.com/?accountid=058619e4-aa29-4d43-b86a-d6fe089d1207&theme=light&accent=hex,263238&venueid=5125&date=2025-12-07&serviceids=event_ASBAQ8KHKP4SA_1729126023149\">Christmas Party</a><br/><br/></p>",
+            "id": "",
+            "class": ""
+          }
+        }
+      },
+      "block_order": [
+        "richtext_wpzPFj"
+      ],
+      "name": "CRU Stack",
+      "settings": {
+        "id": "",
+        "class": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cru_hero_slider_8U6nBx",
+    "cru_experience_GeQgL7",
+    "cru_stack_DhNxqJ",
+    "cru_experience_MaXKTD",
+    "cru_stack_VQR6gE"
+  ]
+}

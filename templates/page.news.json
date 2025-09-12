@@ -20,36 +20,33 @@
         "text_GkyNK3": {
           "type": "text",
           "settings": {
-            "text": "News",
+            "text": "NEWS & EVENTS",
             "id": "",
             "class": "page_title"
-          }
-        },
-        "custom_DRqPFr": {
-          "type": "custom",
-          "settings": {
-            "subheading": "Read Clarendon Hills news posts about topics ranging from new releases to the latest scores and more. We'll keep adding information here including how museum wines are tasting, what new wines we're adding to our website and other information to assist you in understanding more about Clarendon Hills",
-            "section_id": "",
-            "section_class": "",
-            "has_button": true,
-            "button_text": "Mailing list signup",
-            "button_link": "/"
           }
         }
       },
       "block_order": [
-        "text_GkyNK3",
-        "custom_DRqPFr"
+        "text_GkyNK3"
       ],
       "name": "CRU Stack",
       "settings": {
         "id": "",
         "class": ""
       }
+    },
+    "cru_blog_posts_4VmHxg": {
+      "type": "cru-blog-posts",
+      "name": "CRU Posts",
+      "settings": {
+        "section_id": "",
+        "section_class": ""
+      }
     }
   },
   "order": [
     "main",
-    "cru_stack_7RRm4r"
+    "cru_stack_7RRm4r",
+    "cru_blog_posts_4VmHxg"
   ]
 }

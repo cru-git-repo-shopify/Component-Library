@@ -1,63 +1,55 @@
-<!-- Sidebar Cart -->
-<div id="ajax-cart-sidebar" class="hidden fixed">
-  <div id="cart-loading" class="hidden absolute inset-0 bg-white/80 flex items-center justify-center z-50">
-    <div class="w-8 h-8 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
-  </div>
-  <div class="side-cart-inner">
-    <div class="side-cart-header">
-      <h2 class="">Your Cart</h2>
-      <button id="close-cart">&times;</button>
-    </div>
-    <div id="ajax-cart-items">
-      <!-- Cart items will be dynamically inserted here -->
-    </div>
-    <div class="side-cart-footer">
-      <div class="flex cart-totals">
-        <span class="font-semibold">Subtotal:</span>
-        <span id="ajax-cart-subtotal"></span>
-      </div>
-      <div class="side-cart-actions">
-        <a href="/cart" class="cart-action">View Cart</a>
-        <a href="/checkout" class="cart-action">Checkout</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Cart Overlay -->
-<div id="cart-overlay" class="hidden fixed inset-0 bg-black/50 z-40"></div>
-
-<script>
 document.addEventListener('DOMContentLoaded', function () {
-    // Open/Close Cart Sidebar
-    const cartSidebar = document.getElementById('ajax-cart-sidebar');
-    const overlay = document.getElementById('cart-overlay');
-    const closeBtn = document.getElementById('close-cart');
-    const openBtn = document.querySelector('.open-cart');
-    const loadingOverlay = document.getElementById('cart-loading');
+  document.querySelectorAll('.ajax-add-to-cart').forEach(function (container) {
+    const button = container.querySelector('.add-to-cart-button');
+    const quantityInput = container.querySelector('.quantity-input');
+    const plusBtn = container.querySelector('.qty-btn.plus');
+    const minusBtn = container.querySelector('.qty-btn.minus');
+    const statusSpan = container.querySelector('.add-status');
+    const variantId = container.dataset.variantId;
 
-    openBtn.addEventListener('click', function() {
-      cartSidebar.classList.remove('hidden');
-      overlay.classList.remove('hidden');
+    // Quantity increment/decrement logic
+    plusBtn.addEventListener('click', () => {
+      quantityInput.value = parseInt(quantityInput.value || 1) + 1;
     });
 
-    closeBtn.addEventListener('click', closeCart);
-    overlay.addEventListener('click', closeCart);
+    minusBtn.addEventListener('click', () => {
+      const current = parseInt(quantityInput.value || 1);
+      if (current > 1) quantityInput.value = current - 1;
+    });
 
-    function closeCart() {
-      cartSidebar.classList.add('hidden');
-      overlay.classList.add('hidden');
-    }
+    // Add to cart AJAX logic
+    button.addEventListener('click', function (e) {
+      e.preventDefault();
+      const quantity = parseInt(quantityInput.value, 10);
 
-    if (typeof Shopify === 'undefined') {
-      var Shopify = {};
-    }
-    Shopify.formatMoney = function(cents) {
-      return '$' + (cents / 100).toFixed(2);
-    }
+      fetch('/cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          id: variantId,
+          quantity: quantity
+        })
+      })
+      .then(res => res.json())
+      .then(data => {
+        updateCart();
+        openCart(); // Open the cart sidebar
+        // statusSpan.textContent = "Added!";
+        // statusSpan.style.color = "green";
+        // setTimeout(() => statusSpan.textContent = '', 2000);
+      })
+      .catch(err => {
+        // statusSpan.textContent = "Error adding to cart";
+        // statusSpan.style.color = "red";
+      });
+    });
+  });
 
+  // Update Cart Function
     function updateCart() {
-      showLoading();
       fetch('/cart.js')
         .then(res => res.json())
         .then(cart => {
@@ -83,6 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         </div>
                       </div>
                     </div>
+                    
                   </div>
                   <img src="${item.image}" alt="${item.title}" class="w-16 h-16 object-cover border rounded">
                   <button 
@@ -119,6 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
               });
             });
           });
+
           document.querySelectorAll('.quantity-btn').forEach(button => {
             button.addEventListener('click', function () {
               const line = this.getAttribute('data-line');
@@ -133,16 +127,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 changeCartQuantity(line, currentQty + 1);
               }
             });
-          })
-          .finally(() => {
-            hideLoading();
-            disableCartButtons(false);
           });
         });
     }
 
     function changeCartQuantity(line, qty) {
-      showLoading();
       fetch('/cart/change.js', {
         method: 'POST',
         headers: {
@@ -157,45 +146,21 @@ document.addEventListener('DOMContentLoaded', function () {
       .then(res => res.json())
       .then(data => {
         updateCart();
-      })
-      .finally(() => {
-        hideLoading();
-        disableCartButtons(false);
       });
     }
-  
-  // Show/Hide loading spinner
-  function showLoading() {
-    loadingOverlay.classList.remove('hidden');
-  }
-  function hideLoading() {
-    loadingOverlay.classList.add('hidden');
-  }
-
-  // Disable/enable all cart buttons
-  function disableCartButtons(disabled) {
-    document.querySelectorAll('.quantity-btn, .remove-cart-item').forEach(btn => {
-      btn.disabled = disabled;
-      btn.classList.toggle('opacity-50', disabled);
-      btn.classList.toggle('cursor-not-allowed', disabled);
-    });
-  }
-
-  updateCart(); // Initial cart update
-  hideLoading();
     
-});
-</script>
 
-{% schema %}
-{
-    "name": "CRU Side Cart",
-    "settings": [],
-    "presets": [
-        {
-            "name": "CRU Side Cart",
-            "category": "Custom"
-        }
-    ]
-}
-{% endschema %}
+    function openCart() {
+      const cartSidebar = document.getElementById('ajax-cart-sidebar');
+      const overlay = document.getElementById('cart-overlay');
+      cartSidebar.classList.remove('hidden');
+      overlay.classList.remove('hidden');
+    }
+
+    if (typeof Shopify === 'undefined') {
+      var Shopify = {};
+    }
+    Shopify.formatMoney = function(cents) {
+      return '$' + (cents / 100).toFixed(2);
+    }
+});

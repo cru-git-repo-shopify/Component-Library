@@ -1,6 +1,7 @@
 section.product-page {
     max-width: 90%;
-    margin: 0 auto;
+    margin: 115px auto 0;
+    padding-top: 100px;
 }
 
 .product-wrapper {
@@ -17,15 +18,20 @@ section.product-page {
 }
 
 .quantity-wrapper input#quantity {
-    max-width: 50px;
+    max-width: 75px;
     text-align: center;
     border: 0;
-    border-bottom: 1px solid;
+    border: 1px solid #5f412d;
+    border-radius: 50px;
+    padding: 5px 15px;
+    line-height: 1.618;
+    font-size: 16px;
 }
 
 .product-description {
     max-width: 700px;
     font-size: 15px;
+    margin-bottom: 30px;
 }
 
 .quantity-wrapper input#quantity::-webkit-outer-spin-button, .quantity-wrapper input#quantity::-webkit-inner-spin-button {
@@ -40,16 +46,30 @@ form.product-form {
 
 .product-page .quantity-wrapper {
     max-width: 150px;
+    gap: 5px;
 }
 
 .product-page button.add-to-cart {
-    background-color: transparent;
-    border: 1px solid;
     font-size: 15px;
-    padding: 10px 25px;
-    background-color: #000;
-    color: #fff;
     transition: all 0.3s ease;
+    margin-left: 35px;
+    max-width: 170px;
+    width: 100%;
+    font-weight: 500;
+    font-family: 'FuturaStdMedium';
+    background-color: transparent;
+    border: 2px solid #402A18;
+    color: #402a18;
+    cursor: pointer;
+    padding: .6180469716em 1.41575em;
+    text-decoration: none;
+    line-height: 1.618;
+}
+
+.product-page button.add-to-cart:hover {
+    background-color: #402A18!important;
+    color: #EEE1C6!important;
+    border-color: #402A18!important;
 }
 
 .product-page button.add-to-cart:hover {
@@ -77,7 +97,7 @@ form.product-form {
 
 #product-specifications {
     padding: 115px 0;
-    background-color: #231F20;
+    /* background-color: #231F20; */
     width: 100%;
 }
 
@@ -90,9 +110,9 @@ form.product-form {
     display: flex;
     flex-wrap: wrap;
     padding: 24px 0;
-    border-bottom: 1px solid;
     color: #fff;
     font-size: 15px;
+    border-bottom: 1px solid #5f412d;
 }
 
 p.specs_title {
@@ -113,7 +133,107 @@ p.specs_details {
     display: block;
     margin-bottom: 16px;
     font-size: 18px;
-    font-family: 'Inter-light';
+    font-family: 'FuturaStdMedium';
+}
+
+h3.specs_header {
+    color: #5f412d;
+    font-size: 28px;
+    font-family: FuturaStdMedium, serif;
+    font-weight: 300;
+}
+
+.product-details h1 {
+    font-family: FuturaStdMedium, serif;
+    padding-left: 0;
+    margin-left: 0;
+    color: #5f412d;
+    width: fit-content;
+    border-bottom: 5px dotted;
+    padding: 0 0px 10px;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 1.214;
+}
+
+p.product-price:after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 1px;
+    margin-top: 24px;
+    background-color: #5f412d;
+}
+
+.product-details {
+    max-width: 525px;
+}
+
+.product-description a {
+    color: #5f412d;
+}
+
+.product-page button.add-to-cart {
+    margin-left: 35px;
+    max-width: 170px;
+    width: 100%;
+    font-weight: 500;
+    font-family: 'FuturaStdMedium';
+    background-color: transparent;
+    border: 2px solid #402A18;
+    color: #402a18;
+    cursor: pointer;
+    padding: .6180469716em 1.41575em;
+    text-decoration: none;
+    line-height: 1.618;
+}
+
+.product-page button.qty-btn {
+    font-size: 24px;
+    color: #5f412d;
+    font-weight: 900;
+}
+
+a.collapse_specs {
+    width: 100%;
+    display: none;
+    color: #5f412d;
+    text-transform: uppercase;
+    position: relative;
+    overflow: auto;
+    vertical-align: revert;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.618;
+}
+
+a.collapse_specs:after {
+    content: '+';
+    display: inline-block;
+    float: right;
+    font-size: 26px;
+    line-height: 1;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#tasting_note_video {
+    max-width: 800px;
+    width: 100%;
+    padding: 24px;
 }
 
 @media only screen and (max-width: 781px) {
@@ -131,6 +251,25 @@ p.specs_details {
 
     .product-specifications-inner {
         width: 90%;
+    }
+
+    a.collapse_specs {
+        display: block;
+    }
+
+    .meta-item {
+        display: none;
+        padding: 0 0 24px;
+        border: none;
+    }
+
+    p.specs_title {
+        display: none;
+    }
+
+    p.specs_details {
+        width: 100%;
+        margin: 0;
     }
 }
 

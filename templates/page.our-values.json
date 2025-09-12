@@ -1,0 +1,221 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "cru_hero_slider_trQECX": {
+      "type": "cru-hero-slider",
+      "blocks": {
+        "slide_6btCCH": {
+          "type": "slide",
+          "settings": {
+            "bg_image": "shopify://shop_images/our-values.jpg",
+            "y_alignment": "center",
+            "x_alignment": "center",
+            "mobile_y_alignment": "center",
+            "mobile_x_alignment": "center",
+            "allow_overlay": false,
+            "overlay_color": "",
+            "hero_heading": "<p>OUR VALUES</p>",
+            "heading_color": "#eee1c6",
+            "hero_subheading": "",
+            "hero_button": "",
+            "hero_btn_link": "",
+            "has_nxt_btn": false,
+            "nxt_btn_txt": "",
+            "has_prev_btn": false,
+            "prev_btn_txt": "",
+            "header_type": "dark"
+          }
+        }
+      },
+      "block_order": [
+        "slide_6btCCH"
+      ],
+      "name": "CRU Hero Slider",
+      "settings": {}
+    },
+    "cru_stack_PGBn8n": {
+      "type": "cru-stack",
+      "blocks": {
+        "richtext_ibnFF8": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>The Oliver family have long considered themselves custodians of the ‘Taranga’ property in McLaren Vale, always working to improve the land for the generations to come.<br/><br/></p>",
+            "id": "",
+            "class": ""
+          }
+        },
+        "html_6nmKkM": {
+          "type": "html",
+          "settings": {
+            "html": "<div class=\"scroll_links\">\n<a class=\"scroll_to\" href=\"#vineyards\">VINEYARDS</a>\n<a class=\"scroll_to\" href=\"#winemaking\">WINEMAKING</a>\n<a class=\"scroll_to\" href=\"#sustainability\">SUSTAINABILITY</a>\n<a class=\"scroll_to\" href=\"#community\">COMMUNITY</a>\n</div>",
+            "id": "",
+            "class": ""
+          }
+        }
+      },
+      "block_order": [
+        "richtext_ibnFF8",
+        "html_6nmKkM"
+      ],
+      "name": "CRU Stack",
+      "settings": {
+        "id": "",
+        "class": "intro-text"
+      }
+    },
+    "cru_2_col_MgJqWP": {
+      "type": "cru-2-col",
+      "blocks": {
+        "text_column_KCXrVY": {
+          "type": "text_column",
+          "settings": {
+            "heading": "VINEYARDS",
+            "column_content": "<p>All the wines from Oliver’s Taranga are 100% estate grown – with the oldest vineyard planted in 1948 by HJ Oliver. Each of the 50 McLaren Vale blocks are looked after individually, and tailored to the both the variety and soil type.</p><p>The vineyard uses recycled water, as well as state of the art technology for irrigation management, to conserve water wherever possible. With decades of experience managing the family vineyard, today’s methods include plenty of the tried and true alongside the best in improved, modern management techniques.</p><p>And the ‘Taranga’ vineyard doesn’t just supply wine grapes to Oliver’s Taranga, but many other premium wine producers in the McLaren Vale region and beyond. Don and Corrina are both proud members of the Penfold’s Grange Growers club, with certain blocks of their Shiraz consistently contributing to Australia’s iconic wine, Penfolds Grange – some of the rare few that can lay claim to this outside of the Barossa Valley.</p>",
+            "show_button": false,
+            "button_link": "https://example.com",
+            "button_text": "Learn More"
+          }
+        },
+        "image_column_wQF6FM": {
+          "type": "image_column",
+          "settings": {
+            "type": "single",
+            "image_1": "shopify://shop_images/AUS06518.jpg",
+            "image_alt": "Image"
+          }
+        }
+      },
+      "block_order": [
+        "text_column_KCXrVY",
+        "image_column_wQF6FM"
+      ],
+      "name": "CRU 2 Column",
+      "settings": {
+        "class": "",
+        "id": "vineyards",
+        "is_reversed": true
+      }
+    },
+    "cru_2_col_h88jrn": {
+      "type": "cru-2-col",
+      "blocks": {
+        "text_column_ecgpAD": {
+          "type": "text_column",
+          "settings": {
+            "heading": "WINEMAKING",
+            "column_content": "<p>For Corrina, her main goal as a winemaker is to let the vineyard speak. And given her recognition in the industry, including being Australian Winemaker of the Year, her methods have found plenty of support and respect. In order to capture the vineyard’s full expression, Corrina remains relatively hands off in the winery – using indigenous yeasts, as few additions as possible, making vegan friendly wines.</p><p>When you have been making wine from the same vineyard for years, you quickly realise that every batch has its own identity. This is why Corrina treats each batch individually, keeping them separate right up until the final blend.</p><p>Oliver’s Taranga have the privilege to work with a site that has proven itself over six generations, but do not choose to sit idly in place. Constantly pushing boundaries, they never let go of the classic varieties that are at the root of their family’s success, whilst spearheading the regional adoption of varieties that make the most of the seaside region they call home, making Oliver’s Taranga widely recognised as a leader in the ‘alternative’ varietals space.</p>",
+            "show_button": false,
+            "button_link": "https://example.com",
+            "button_text": "Learn More"
+          }
+        },
+        "image_column_Vn39VF": {
+          "type": "image_column",
+          "settings": {
+            "type": "single",
+            "image_1": "shopify://shop_images/AUS05938.jpg",
+            "image_alt": "Image"
+          }
+        }
+      },
+      "block_order": [
+        "text_column_ecgpAD",
+        "image_column_Vn39VF"
+      ],
+      "name": "CRU 2 Column",
+      "settings": {
+        "class": "",
+        "id": "winemaking",
+        "is_reversed": false
+      }
+    },
+    "cru_2_col_EAmiBB": {
+      "type": "cru-2-col",
+      "blocks": {
+        "text_column_K8UJK6": {
+          "type": "text_column",
+          "settings": {
+            "heading": "SUSTAINABILITY",
+            "column_content": "<p>The Oliver family have long considered themselves custodians of the land, always working to improve the land for the generations ahead. As such, the Oliver’s Taranga vineyards are farmed sustainably, being an inaugural and accredited member with <a href=\"https://sustainablewinegrowing.com.au/\" target=\"_blank\"><strong>Sustainable Wine Growing Australia</strong></a>.</p><p>Sustainable Winegrowing Australia is Australia’s national program for grapegrowers and winemakers to demonstrate and continuously improve their sustainability in the vineyard and winery through the environmental, social and economic aspects of their businesses. The program takes a holistic approach to managing, supporting and promoting sustainability.</p><p>Oliver’s Taranga are constantly working towards improving their environmental footprint across every aspect of the business – introducing solar panels, recycling, compostable packaging, paperless offices, rainwater and many more intitatives.</p>",
+            "show_button": false,
+            "button_link": "https://example.com",
+            "button_text": "Learn More"
+          }
+        },
+        "image_column_EhiAAU": {
+          "type": "image_column",
+          "settings": {
+            "type": "single",
+            "image_1": "shopify://shop_images/AUS05748_1.jpg",
+            "image_alt": "Image"
+          }
+        }
+      },
+      "block_order": [
+        "text_column_K8UJK6",
+        "image_column_EhiAAU"
+      ],
+      "name": "CRU 2 Column",
+      "settings": {
+        "class": "",
+        "id": "sustainability",
+        "is_reversed": true
+      }
+    },
+    "cru_2_col_GJqchD": {
+      "type": "cru-2-col",
+      "blocks": {
+        "text_column_67YBUp": {
+          "type": "text_column",
+          "settings": {
+            "heading": "COMMUNITY",
+            "column_content": "<p>Having been residents of the McLaren Vale region for over six generations, the Oliver family have always been heavily involved in their local community, particularly through wine, vineyards, local governance and sport, every generation has made their contribution.</p><p>Today, Corrina particularly is committed to the success of both her own family business, and the entire Australian industry as well. A current board member of the Australian Wine Research Institute, Corrina is also a champion for women in the industry, from her position as a committee member on the WGA Diversity, Equality & Inclusion charter for the Australian Wine Industry. In addition, Corrina holds an advisory board position for the Australian Women in Wine Awards, and is an active participant in Family Business Australia, and was recognised by them as a Leading Woman in Business in 2021.</p><p>As a family of talented sportspeople, the Oliver’s have long suppotrted local sport, the ‘best on ground’ award is presented in RW Oliver’s name at the Great Southern Football League Grand Final to this day. HJ & Don were both named in the McLaren Vale Football Club’s team of the century for a father/son 150 runs not out partnership.</p>",
+            "show_button": false,
+            "button_link": "https://example.com",
+            "button_text": "Learn More"
+          }
+        },
+        "image_column_pwA7tL": {
+          "type": "image_column",
+          "settings": {
+            "type": "single",
+            "image_1": "shopify://shop_images/1_FBANZ_2022_Day3_AwardsDinner_Lo-Res-244.jpg",
+            "image_alt": "Image"
+          }
+        }
+      },
+      "block_order": [
+        "text_column_67YBUp",
+        "image_column_pwA7tL"
+      ],
+      "name": "CRU 2 Column",
+      "settings": {
+        "class": "",
+        "id": "community",
+        "is_reversed": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cru_hero_slider_trQECX",
+    "cru_stack_PGBn8n",
+    "cru_2_col_MgJqWP",
+    "cru_2_col_h88jrn",
+    "cru_2_col_EAmiBB",
+    "cru_2_col_GJqchD"
+  ]
+}

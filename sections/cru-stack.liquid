@@ -11,7 +11,21 @@
         {% when 'image' %}
             <img  src="{{ block.settings.image | image_url: 'medium' }}" alt="">
         {% when 'video' %}
-            <iframe  src="{{ block.settings.video_url }}" frameborder="0" allowfullscreen></iframe>
+          {% if block.settings.video_url != blank %}
+            {% if block.settings.video_url.type == 'youtube' %}
+              <iframe 
+                src="https://www.youtube.com/embed/{{ block.settings.video_url.id }}" 
+                frameborder="0" 
+                allowfullscreen>
+              </iframe>
+            {% elsif block.settings.video_url.type == 'vimeo' %}
+              <iframe 
+                src="https://player.vimeo.com/video/{{ block.settings.video_url.id }}" 
+                frameborder="0" 
+                allowfullscreen>
+              </iframe>
+            {% endif %}
+          {% endif %}
         {% when 'url' %}
             <a  href="{{ block.settings.link }}">{{ block.settings.label }}</a>
         {% when 'color' %}

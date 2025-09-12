@@ -1,42 +1,90 @@
-.article_feat_image {height: 350px;width: 100%;background-size: cover;background-position: center;margin-bottom: 24px;display: block!important;}
+.article_feat_image {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0;
+    display: block !important;
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 1 / 1;
+}
+
+.article_content {
+    margin: 0 auto;
+    padding: 40px 45px 92px;
+    height: auto;
+    bottom: 0px;
+    background-color: #F9F7EF;
+    width: 100%;
+}
 
 .all_posts {
     display: flex;
     flex-wrap: wrap;
-    gap: 45px 50px;
-    max-width: 90%;
-    margin: 100px auto;
+    gap: 10px;
+    max-width: calc(100% - 20px);
+    margin: 50px auto;
 }
 
 article.post-article {
-    width: calc(33.3333% - 34px);
+    width: calc(33.3333% - 7px);
+    background-color: #f9f7ef;
+    position: relative;
 }
 
 h2.article_title {
+    font-family: FuturaStdMedium;
+    color: #5f412d;
+    font-size: 32px;
+    text-align: center;
+    border-bottom: 2px dotted;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 0 5px;
     font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-    font-family: inter-light;
-    margin-bottom: 24px;
+    line-height: 1.214;
 }
 
-h2.article_title:after {
+a.article_link {
+    position: absolute;
+    left: 50%;
+    bottom: 45px;
+    transform: translate(-50%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: fit-content;
+    color: #5f412d;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    /* max-width: 250px; */
+    padding: 12px 24px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+/* h2.article_title:after {
     content: '';
     width: 70px;
     height: 1px;
     display: block;
     background-color: #231f20;
     margin-top: 24px;
-}
+} */
 
 p.shor_desc {
-    font-size: 15px;
-    line-height: 23px;
     margin-bottom: 24px;
+    font-size: 16px;
+    color: #5f412d;
+    line-height: 24px;
+    transition: all 0.3s ease;
+    text-align: center;
 }
 
 a.article_link {
-    padding: 11px 30px;
     text-decoration: none !important;
     border: 1px solid #231f20;
     font-weight: 600;
@@ -46,4 +94,10 @@ a.article_link {
 a.article_link:hover {
     color: #fff;
     background-color: #231f20;
+}
+
+@media screen and (max-width: 900px) {
+    article.post-article {
+        width: 100%;
+    }
 }
