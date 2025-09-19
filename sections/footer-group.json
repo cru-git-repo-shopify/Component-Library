@@ -17,7 +17,7 @@
       "settings": {
         "bg_color": "#231f20",
         "show_col_1": true,
-        "col1_content": "<div class=\"footer-inner\">\n<p class=\"footer_heading\">Cuvees</p>\n\n<ul>\n \t<li><a href=\"/syrah/\">Syrah</a></li>\n \t<li><a href=\"/grenache/\">Grenache</a></li>\n \t<li><a href=\"/cabernet/\">Cabernet Sauvignon</a></li>\n</ul>\n<div class=\"footer_social_media_icons\"><p><a href=\"https://www.instagram.com/clarendonhills/\"><i class=\"fa-brands fa-instagram\"></i></a></p></div>\n</div>",
+        "col1_content": "<div class=\"footer-inner\">\n<p class=\"footer_heading\">Assemblage</p>\n\n<ul>\n \t<li><a href=\"/syrah/\">Syrah</a></li>\n \t<li><a href=\"/grenache/\">Grenache</a></li>\n \t<li><a href=\"/cabernet/\">Cabernet Sauvignon</a></li>\n</ul>\n<div class=\"footer_social_media_icons\"><p><a href=\"https://www.instagram.com/wines/\"><i class=\"fa-brands fa-instagram\"></i></a></p></div>\n</div>",
         "show_col_2": false,
         "col2_content": "",
         "show_col_3": false,
