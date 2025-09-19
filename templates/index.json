@@ -15,7 +15,7 @@
         "slide_mxmNB7": {
           "type": "slide",
           "settings": {
-            "bg_image": "shopify://shop_images/home-hero.jpg",
+            "bg_image": "shopify://shop_images/alberto-caliman-nWuWkFrW1pg-unsplash.jpg",
             "y_alignment": "center",
             "x_alignment": "center",
             "mobile_y_alignment": "center",
@@ -37,7 +37,7 @@
         "slide_HpR7Kh": {
           "type": "slide",
           "settings": {
-            "bg_image": "shopify://shop_images/home-hero_1.jpg",
+            "bg_image": "shopify://shop_images/maksym-kaharlytskyi-3uJt73tr4hI-unsplash.jpg",
             "y_alignment": "center",
             "x_alignment": "center",
             "mobile_y_alignment": "center",
@@ -59,7 +59,7 @@
         "slide_EmMKY6": {
           "type": "slide",
           "settings": {
-            "bg_image": "shopify://shop_images/vineyard-dusk.jpg",
+            "bg_image": "shopify://shop_images/lukas-kulla-vyOpe3tvwxU-unsplash.jpg",
             "y_alignment": "center",
             "x_alignment": "center",
             "mobile_y_alignment": "center",
@@ -468,6 +468,7 @@
         "large_img_J3cwri": {
           "type": "largeImg",
           "settings": {
+            "image": "shopify://shop_images/vindemia-winery-OQ_o-SaEMiI-unsplash.jpg",
             "enable_max_width_image": false,
             "custom_width_image": 1170,
             "border_radius": 0,
@@ -497,7 +498,7 @@
             "border_title": "border_s1",
             "border_color_title": "#ffffff",
             "border_color_title_mobile": "#ffffff",
-            "text": "The story of McLaren Vale’s terroir began over 1600 million years ago and today ancient fragments ripple across the greater region like a giant patchwork quilt. Close proximity to the Great Southern Ocean and St Vincent Gulf, in combination with incredible old vine material, indeed forge wines that express a unique liveliness that typify the regional expression. With freshness and bright natural acidity derived from the marine climate, there’s an exotic and kaleidoscopic luminescence to McLaren Vale’s wines. Clarendon Hills has devoted its focus over the last 3 decades to highlighting the very best terroirs of Blewitt Springs and Clarendon sub districts.",
+            "text": "The story of McLaren Vale’s terroir stretches back over 1,600 million years, with ancient geological fragments spread across the landscape like a vast patchwork quilt. Its close proximity to the Great Southern Ocean and St Vincent Gulf, combined with the presence of remarkable old vines, produces wines with a distinct liveliness that reflects the region’s character. Freshness and bright natural acidity from the marine climate bring an exotic vibrancy and complexity to the wines. Over the past decades, particular attention has been given to the unique terroirs of the Blewitt Springs and Clarendon sub-districts.",
             "font_size_des": 12,
             "font_size_des_mb": 12,
             "line_height_des": 26,
@@ -606,7 +607,7 @@
         "textarea_DKdmgi": {
           "type": "textarea",
           "settings": {
-            "textarea": "Clarendon Hills Syrah’s are considered among not only the very best in Australia but also the world. In 1990, Clarendon Hills discovered arguably Australia’s greatest single vineyard Syrah with the Astralis Syrah. Over the years Clarendon Hills has also added a number of individual, yet utterly exceptional, single vineyard old vine expressions to the portfolio that exclusively hail from the Blewitt Springs and Clarendon sub districts.",
+            "textarea": "Syrah from this region is regarded among the finest in Australia and the world. In 1990, one of the country’s greatest single-vineyard Syrahs was discovered, setting a benchmark for quality. Over the years, additional single-vineyard, old-vine expressions have been introduced, all sourced exclusively from the Blewitt Springs and Clarendon sub-districts.",
             "id": "",
             "class": "prod_slider_txt content-txt"
           }
@@ -764,7 +765,7 @@
         "image_column_BqqEEk": {
           "type": "image_column",
           "settings": {
-            "image": "shopify://shop_images/tawny.jpg",
+            "image": "shopify://shop_images/mauro-lima-wmjypBLF4bs-unsplash.jpg",
             "image_alt": "Image"
           }
         }
@@ -796,7 +797,7 @@
         "image_column_Egq3pQ": {
           "type": "image_column",
           "settings": {
-            "image": "shopify://shop_images/tawny.jpg",
+            "image": "shopify://shop_images/louis-hansel-IipiNCpQw0k-unsplash.jpg",
             "image_alt": "Image"
           }
         }
@@ -818,7 +819,7 @@
         "cta_block_UtC83T": {
           "type": "cta_block",
           "settings": {
-            "background_image": "shopify://shop_images/tawny.jpg",
+            "background_image": "shopify://shop_images/rodrigo-abreu-Cj4CWKQllOM-unsplash.jpg",
             "title": "Call to Action",
             "description": "This is a call to action section.",
             "button_link": "https://example.com",
@@ -828,7 +829,7 @@
         "cta_block_8JHCHe": {
           "type": "cta_block",
           "settings": {
-            "background_image": "shopify://shop_images/tawny.jpg",
+            "background_image": "shopify://shop_images/rodrigo-abreu-Cj4CWKQllOM-unsplash.jpg",
             "title": "Call to Action",
             "description": "This is a call to action section.",
             "button_link": "https://example.com",
@@ -838,7 +839,7 @@
         "cta_block_VHjARg": {
           "type": "cta_block",
           "settings": {
-            "background_image": "shopify://shop_images/tawny.jpg",
+            "background_image": "shopify://shop_images/rodrigo-abreu-Cj4CWKQllOM-unsplash.jpg",
             "title": "Call to Action",
             "description": "This is a call to action section.",
             "button_link": "https://example.com",
