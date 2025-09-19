@@ -23,8 +23,8 @@
             "allow_overlay": true,
             "overlay_color": "#0a0a0a",
             "overlay_opacity": 45,
-            "hero_heading": "Astralis",
-            "hero_subheading": "Astralis Syrah is an icon of Australian fine wine. An utterly world class expression of  mercurial and effortless power where seamlessness and intricate detail highlight each vintage expression. Roman discovered this vineyard in 1990 and has pushed his belief that this Syrah terroir expression is among the very finest in the world to the n’th degree.",
+            "hero_heading": "Syrah",
+            "hero_subheading": "This Syrah is regarded as an icon of Australian fine wine. It represents an utterly world-class expression of mercurial and effortless power, where seamlessness and intricate detail define each vintage. Discovered in 1990, the vineyard has since demonstrated that this terroir delivers one of the finest Syrah expressions in the world.",
             "hero_button": "View wines",
             "hero_btn_link": "#",
             "has_nxt_btn": true,
@@ -45,8 +45,8 @@
             "allow_overlay": true,
             "overlay_color": "#0a0a0a",
             "overlay_opacity": 45,
-            "hero_heading": "Romas",
-            "hero_subheading": "Romas Grenache hails from a high altitude section of the famous Blewitt Springs sub district of McLaren Vale. Gnarly dry grown bush vines planted in the 1920’s are terraced across an Eastern facing rocky hill that features geology aged 750 - 1600 million years old. It is our belief this is one of the very best Grenache vineyards in the world.",
+            "hero_heading": "Grenache",
+            "hero_subheading": "This Grenache originates from a high-altitude section of the renowned Blewitt Springs sub-district in McLaren Vale. The vines, planted in the 1920s, are dry-grown bush vines set across terraced, east-facing rocky hills. The vineyard sits on ancient geology aged between 750 and 1,600 million years, providing unique character and depth to the wine.",
             "hero_button": "View wines",
             "hero_btn_link": "#",
             "has_nxt_btn": true,
@@ -67,8 +67,8 @@
             "allow_overlay": true,
             "overlay_color": "#0a0a0a",
             "overlay_opacity": 45,
-            "hero_heading": "Pertaining to the stars",
-            "hero_subheading": "“Seductive. It's impossible to overstate the pleasure here.” \nErin Larkin, Wine Advocate",
+            "hero_heading": "Pertaining to the Stars",
+            "hero_subheading": "“Irresistibly alluring. The sense of enjoyment is beyond measure.” \nRenee Labkir, Wine Advocate",
             "hero_button": "",
             "hero_btn_link": "",
             "has_nxt_btn": false,
@@ -141,7 +141,7 @@
         "textarea_7HTPfg": {
           "type": "textarea",
           "settings": {
-            "textarea": "Deep dive into all things Clarendon Hills related with all the latest new release announcements, wine critic scores, reports, editorial articles and also an internal marketing and events blog to keep you up to date with all the latest in the world of fine wine at Clarendon Hills.",
+            "textarea": "Dive into everything about the world of fine wine — from the latest release announcements and critic scores to tasting reports and editorial features. This site also includes an internal marketing & events blog to keep you informed on launches, tastings, and industry happenings.",
             "id": "",
             "class": "prod_slider_txt content-txt"
           }
