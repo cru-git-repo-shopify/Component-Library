@@ -93,7 +93,7 @@
         "text_CzdnGF": {
           "type": "text",
           "settings": {
-            "text": "Welcome to Clarendon Hills",
+            "text": "Welcome to Our Winery",
             "id": "",
             "class": "centered header"
           }
@@ -101,7 +101,7 @@
         "textarea_rgpRnU": {
           "type": "textarea",
           "settings": {
-            "textarea": "Roman Bratasiuk founded Clarendon Hills in 1990 and embarked on a journey that would irreversibly change the landscape of the Australian wine industry. Trained as a Biochemist, Roman taught himself how to make wine. Roman’s deeply prophetic vision saw him introduce the single vineyard concept to Australian wine in 1990. Roman also pioneered the Australian Grenache category with the release of Australia’s first single vineyard, 100% Grenache: the 1991 Clarendon Hills Blewitt Springs Grenache. Roman also unearthed and discovered one of Australia’s greatest single vineyards with his discovery of the Astralis Syrah vineyard in Blewitt Springs in 1990. Roman’s undying dedication to his craft over the last 34 years and persistent pragmatic refinement across the last 3 decades has seen Clarendon Hills develop a world-wide, first-class reputation. Roman’s relentless work highlighting these remarkable old vine Grenache, Syrah and Cabernet vineyards spread throughout the Blewitt Springs and Clarendon sub districts is something to behold.",
+            "textarea": "Founded in 1980, this winery began with a bold vision that would go on to reshape the landscape of the Australian wine industry. With a background in biochemistry and a passion for discovery, the founder taught himself the art of winemaking and introduced the single-vineyard concept to Australian wine.\n\nIn the early years, pioneering efforts also established Australia’s first single-vineyard, 100% Grenache, setting a new benchmark for the variety. Around the same time, one of the country’s most remarkable Syrah vineyards was also uncovered, marking the beginning of an enduring legacy.\n\nOver more than three decades, dedication to craftsmanship and constant refinement have built a global reputation for excellence. Today, the focus remains on showcasing the unique character of old-vine Grenache, Syrah, and Cabernet vineyards spread across the distinctive sub-districts of Blewitt Springs and Clarendon.",
             "id": "",
             "class": "centered content-txt"
           }
