@@ -28,7 +28,7 @@
             "hero_button": "View wines",
             "hero_btn_link": "#",
             "has_nxt_btn": true,
-            "nxt_btn_txt": "Romas",
+            "nxt_btn_txt": "Grenache",
             "has_prev_btn": false,
             "prev_btn_txt": "",
             "header_type": "light"
@@ -52,7 +52,7 @@
             "has_nxt_btn": true,
             "nxt_btn_txt": "Pertaining to the Stars",
             "has_prev_btn": true,
-            "prev_btn_txt": "Astralis",
+            "prev_btn_txt": "Syrah",
             "header_type": "dark"
           }
         },
@@ -74,7 +74,7 @@
             "has_nxt_btn": false,
             "nxt_btn_txt": "",
             "has_prev_btn": true,
-            "prev_btn_txt": "Pertaining to the Stars",
+            "prev_btn_txt": "Grenache",
             "header_type": "light"
           }
         }
